@@ -147,7 +147,7 @@ async function loadData() {
         const data = await response.json();
         return data;
     } catch (error) {
-        console.error("Erreur lors du chargement des données:", error);
+        console.error("Error while loading data:", error);
         return null;
     }
 }
@@ -170,7 +170,7 @@ async function init() {
             displayResults(data, searchBar.value.toLowerCase());
         });
     } else {
-        resultsContainer.innerHTML = '<p>Erreur lors du chargement des données.</p>';
+        resultsContainer.innerHTML = '<p>Error while loading datas.</p>';
     }
 }
 
