@@ -102,7 +102,7 @@ if response.status_code == 200:
                     })
 
     # Enregistrer les données dans un fichier JSON
-    with open("data/data.json", "w", encoding="utf-8") as file:
+    with open("docs/data/data.json", "w", encoding="utf-8") as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
     print("Fichier JSON créé avec succès.")
 else:

@@ -143,7 +143,7 @@ function sortTable(columnIndex, table) {
 
 async function loadData() {
     try {
-        const response = await fetch('/data/data.json');
+        const response = await fetch('data/data.json');
         const data = await response.json();
         return data;
     } catch (error) {
