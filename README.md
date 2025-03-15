@@ -33,7 +33,7 @@ There's currently a filter that blacklist certain categories from the drop table
 - Adding average duration for each rotation and mission (manually set, but you'll be able to see like "5 minutes for this drop" in average to get)
 - Adding more categories with modification to the python script
 - Adding more style to the website
-- Adding pictures and more viausl feeback when looking through the website
+- Adding pictures and more visual feeback when looking through the website
 - 
 - 
 - 
