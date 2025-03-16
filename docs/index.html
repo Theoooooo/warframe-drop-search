@@ -8,10 +8,12 @@
 </head>
 <body>
     <h1>Warframe Drop Table Search</h1>
-    <input type="text" id="searchBar" placeholder="Enter the object to search for...">
+    <div id="search-container">
+        <input type="text" id="searchBar" placeholder="Entrez le nom de l'objet...">
+        <div id="category-buttons"></div> <!-- Conteneur pour les boutons de catégorie -->
+    </div>
     <div id="loader" class="loader"></div>
     <div id="results"></div>
-
     <script src="script.js"></script>
 </body>
 </html>

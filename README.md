@@ -40,6 +40,7 @@ There's currently a filter that blacklist certain categories from the drop table
 - Search Bar filtering results based on the Source (Mission Name / Mob) and the associated Loot (Reward / Mod)
 - Visual Color based on Rotation (for missions) and Loot Rarity
 - Visual feedback when no results are being found
+- Category Selection to refine result view
 
 ## Following Features
 - Adding average duration for each rotation and mission (manually setut you'll be able to see like "5 minutes for this drop" in average to get)

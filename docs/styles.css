@@ -46,3 +46,20 @@ th {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+#category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+#category-buttons button {
+    padding: 5px 10px;
+    border: 1px solid #cac6f5;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #d7daf8;
+    color: #1c3272;
+}
+#category-buttons button[data-active="false"] {
+    background-color: #ccc;
+}
