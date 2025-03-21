@@ -3,9 +3,10 @@ const rarityColor = ["#FFFFFF", "#FFF6FF", "#E1F8FF", "#92FFFF", "#A5FEB5", "#FA
 const rotationTable = ["Rotation A", "Rotation B", "Rotation C"];
 const rotationColor = ["#FFFFFF", "#CBFFCC", "#79FF7C"];
 
-const standardLootCategories = ["Missions:", "Relics:", "Keys:", "Dynamic Location Rewards:", "Sorties:"]
-const modLootCategories = ["Mod Drops by Mod:"]
+const standardLootCategories = ["Missions:", "Relics:", "Keys:", "Dynamic Location Rewards:", "Sorties:",]
+const modLootCategories = ["Mod Drops by Mod:", "Blueprint/Item Drops by Blueprint/Item:", "Resource Drops by Resource:"]
 const modBountyCategories = ["Cetus Bounty Rewards:", "Orb Vallis Bounty Rewards:", "Cambion Drift Bounty Rewards:", "Zariman Bounty Rewards:", "Albrecht's Laboratories Bounty Rewards:", "Hex Bounty Rewards:"]
+const modSourceCategories = ["Sigil Drops by Source:", "Additional Item Drops by Source:", "Relic Drops by Source:"]
 
 function extractColorCode(input, type) {
     let table, colorTable;
@@ -239,7 +240,7 @@ function displayResults(data, query) {
                 });
 
             } else if (modBountyCategories.includes(category)) {
-                const headers = ["Bounty", "Stage", "Reward", "Rarity", "Percentage"];
+                const headers = ["Bounty", "Rotation", "Stage", "Reward", "Rarity", "Percentage"];
 
                 headers.forEach((headerText, index) => {
                     const header = document.createElement('th');
@@ -270,6 +271,10 @@ function displayResults(data, query) {
                     sourceCell.textContent = item.Source;
                     row.appendChild(sourceCell);
 
+                    const rotationCell = document.createElement('td');
+                    rotationCell.textContent = item.Rotation;
+                    row.appendChild(rotationCell);
+
                     const stageCell = document.createElement('td');
                     stageCell.textContent = item.Stage;
                     row.appendChild(stageCell);
@@ -289,6 +294,62 @@ function displayResults(data, query) {
 
                     tableBody.appendChild(row);
                 });
+            } else if (modSourceCategories.includes(category)) {
+                const headers = ["Source", "Loot Drop Chance", "Loot", "Rarity", "Percentage", "Actual Chance"];
+
+                headers.forEach((headerText, index) => {
+                    const header = document.createElement('th');
+                    header.textContent = headerText;
+                    header.style.cursor = 'pointer';
+                    header.style.position = 'relative';
+                    header.style.paddingRight = '20px';
+                    header.onclick = () => sortTable(index, table);
+                    headerRow.appendChild(header);
+
+                    const sortIcon = document.createElement('span');
+                    sortIcon.style.position = 'absolute';
+                    sortIcon.style.right = '5px';
+                    sortIcon.style.top = '50%';
+                    sortIcon.style.transform = 'translateY(-50%)';
+                    sortIcon.textContent = '↕';
+                    header.appendChild(sortIcon);
+                });
+
+                tableHeader.appendChild(headerRow);
+                table.appendChild(tableHeader);
+                divTable.appendChild(table);
+
+                filteredItems.forEach(item => {
+                    const row = document.createElement('tr');
+
+                    const sourceCell = document.createElement('td');
+                    sourceCell.textContent = item.Source;
+                    row.appendChild(sourceCell);
+
+                    const lootDropChanceTypeCell = document.createElement('td');
+                    lootDropChanceTypeCell.textContent = item["Loot Drop Chance"];
+                    row.appendChild(lootDropChanceTypeCell);
+
+                    const dropCell = document.createElement('td');
+                    dropCell.textContent = item.Loot;
+                    row.appendChild(dropCell);
+
+                    const categorieCell = document.createElement('td');
+                    categorieCell.textContent = item.Rarity;
+                    categorieCell.style.backgroundColor = extractColorCode(item.Rarity, "rarity");
+                    row.appendChild(categorieCell);
+
+                    const pourcentageCell = document.createElement('td');
+                    pourcentageCell.textContent = item.Percentage;
+                    row.appendChild(pourcentageCell);
+
+                    const actualChanceCell = document.createElement('td');
+                    actualChanceCell.textContent = ((parseFloat(item["Loot Drop Chance"]) / 100) * (parseFloat(item.Percentage) / 100) * 100).toFixed(3) + '%';
+                    row.appendChild(actualChanceCell);
+
+                    tableBody.appendChild(row);
+                });
+
             }
 
             table.appendChild(tableBody);
@@ -446,7 +507,7 @@ function displayCategory(data, category) {
             });
 
         } else if (modBountyCategories.includes(category)) {
-            const headers = ["Bounty", "Stage", "Reward", "Rarity", "Percentage", "Actual Chance"];
+            const headers = ["Bounty", "Rotation", "Stage", "Reward", "Rarity", "Percentage", "Actual Chance"];
 
             headers.forEach((headerText, index) => {
                 const header = document.createElement('th');
@@ -476,6 +537,65 @@ function displayCategory(data, category) {
                 const sourceCell = document.createElement('td');
                 sourceCell.textContent = item.Source;
                 row.appendChild(sourceCell);
+
+                const rotationCell = document.createElement('td');
+                rotationCell.textContent = item.Rotation;
+                row.appendChild(rotationCell);
+
+                const stageCell = document.createElement('td');
+                stageCell.textContent = item.Stage;
+                row.appendChild(stageCell);
+
+                const modCell = document.createElement('td');
+                modCell.textContent = item.Loot;
+                row.appendChild(modCell);
+
+                const categorieCell = document.createElement('td');
+                categorieCell.textContent = item.Rarity;
+                categorieCell.style.backgroundColor = extractColorCode(item.Rarity, "rarity");
+                row.appendChild(categorieCell);
+
+                const pourcentageCell = document.createElement('td');
+                pourcentageCell.textContent = item.Percentage;
+                row.appendChild(pourcentageCell);
+
+                tableBody.appendChild(row);
+            });
+        } else if (modSourceCategories.includes(category)) {
+            const headers = ["Bounty", "Rotation", "Stage", "Reward", "Rarity", "Percentage"];
+
+            headers.forEach((headerText, index) => {
+                const header = document.createElement('th');
+                header.textContent = headerText;
+                header.style.cursor = 'pointer';
+                header.style.position = 'relative';
+                header.style.paddingRight = '20px';
+                header.onclick = () => sortTable(index, table);
+                headerRow.appendChild(header);
+
+                const sortIcon = document.createElement('span');
+                sortIcon.style.position = 'absolute';
+                sortIcon.style.right = '5px';
+                sortIcon.style.top = '50%';
+                sortIcon.style.transform = 'translateY(-50%)';
+                sortIcon.textContent = '↕';
+                header.appendChild(sortIcon);
+            });
+
+            tableHeader.appendChild(headerRow);
+            table.appendChild(tableHeader);
+            divTable.appendChild(table);
+
+            filteredItems.forEach(item => {
+                const row = document.createElement('tr');
+
+                const sourceCell = document.createElement('td');
+                sourceCell.textContent = item.Source;
+                row.appendChild(sourceCell);
+
+                const rotationCell = document.createElement('td');
+                rotationCell.textContent = item.Rotation;
+                row.appendChild(rotationCell);
 
                 const stageCell = document.createElement('td');
                 stageCell.textContent = item.Stage;
@@ -577,6 +697,7 @@ async function init() {
     const loader = document.getElementById('loader');
     const searchBar = document.getElementById('searchBar');
     const resultsContainer = document.getElementById('results');
+    const updateTimeContainer = document.getElementById('update-time');
 
     loader.style.display = 'block';
     resultsContainer.style.display = 'none';
@@ -587,6 +708,12 @@ async function init() {
     resultsContainer.style.display = 'block';
 
     if (data) {
+        // Afficher l'heure de génération du fichier JSON
+        if (data.Timers && data.Timers.length > 0) {
+            const updateTime = data.Timers[0]["Update Data Set Date"];
+            updateTimeContainer.textContent = `Last update: ${updateTime}`;
+        }
+
         // Créer les boutons de catégorie initialement (sans filtre)
         createCategoryButtons(data, '');
 
@@ -601,11 +728,13 @@ async function init() {
                 // Filtrer les données en fonction de la recherche
                 const filteredData = {};
                 Object.keys(data).forEach(category => {
-                    const filteredItems = data[category].filter(item =>
-                        item.Loot.toLowerCase().includes(query) || item.Source.toLowerCase().includes(query)
-                    );
-                    if (filteredItems.length > 0) {
-                        filteredData[category] = filteredItems;
+                    if (category !== "Timers") { // Ignorer le champ Timers
+                        const filteredItems = data[category].filter(item =>
+                            item.Loot.toLowerCase().includes(query) || item.Source.toLowerCase().includes(query)
+                        );
+                        if (filteredItems.length > 0) {
+                            filteredData[category] = filteredItems;
+                        }
                     }
                 });
 
@@ -631,6 +760,8 @@ async function init() {
                 message.style.borderRadius = '5px';
                 message.style.marginTop = '20px';
                 resultsContainer.appendChild(message);
+
+                // Réinitialiser les boutons de catégorie (afficher toutes les catégories)
                 createCategoryButtons(data, '');
             }
         }, 500); // Délai de refresh après sélection des carctères

@@ -63,3 +63,14 @@ th {
 #category-buttons button[data-active="false"] {
     background-color: #ccc;
 }
+#update-time {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+    color: #666;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
