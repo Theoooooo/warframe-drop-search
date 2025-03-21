@@ -30,25 +30,29 @@ function createCategoryButtons(data, query) {
     buttonContainer.innerHTML = ''; // Vider le conteneur avant d'ajouter les boutons
 
     Object.keys(data).forEach(category => {
-        const filteredItems = data[category].filter(item =>
-            item.Loot.toLowerCase().includes(query) || item.Source.toLowerCase().includes(query)
-        );
+        if (category == "Timers") { // Passe la catégorie Timers du json
+            return
+        } else {
+            const filteredItems = data[category].filter(item =>
+                item.Loot.toLowerCase().includes(query) || item.Source.toLowerCase().includes(query)
+            );
 
-        // Ne pas afficher le bouton si aucun résultat ne correspond
-        if (filteredItems.length > 0) {
-            const button = document.createElement('button');
-            button.textContent = `${category} (${filteredItems.length})`;
-            button.dataset.category = category;
-            button.dataset.active = 'false'; // Par défaut, aucune catégorie n'est active
-            button.style.padding = '5px 10px';
-            button.style.border = '1px solid #cac6f5';
-            button.style.borderRadius = '5px';
-            button.style.cursor = 'pointer';
-            button.style.backgroundColor = '#d7daf8';
-            button.style.color = '#1c3272';
-            button.addEventListener('click', () => toggleCategory(data, button)); // Passer data en paramètre
+            // Ne pas afficher le bouton si aucun résultat ne correspond
+            if (filteredItems.length > 0) {
+                const button = document.createElement('button');
+                button.textContent = `${category} (${filteredItems.length})`;
+                button.dataset.category = category;
+                button.dataset.active = 'false'; // Par défaut, aucune catégorie n'est active
+                button.style.padding = '5px 10px';
+                button.style.border = '1px solid #cac6f5';
+                button.style.borderRadius = '5px';
+                button.style.cursor = 'pointer';
+                button.style.backgroundColor = '#d7daf8';
+                button.style.color = '#1c3272';
+                button.addEventListener('click', () => toggleCategory(data, button)); // Passer data en paramètre
 
-            buttonContainer.appendChild(button);
+                buttonContainer.appendChild(button);
+            }
         }
     });
 }
@@ -102,259 +106,265 @@ function displayResults(data, query) {
     });
 
     Object.keys(data).forEach(category => {
-        const filteredItems = data[category].filter(item =>
-            item.Loot.toLowerCase().includes(query) || item.Source.toLowerCase().includes(query)
-        );
+        if (category == "Timers") {
+            return
+        } else {
+            const filteredItems = data[category].filter(item =>
+                item.Loot.toLowerCase().includes(query) || item.Source.toLowerCase().includes(query)
+            );
 
-        if (filteredItems.length > 0) {
-            hasResults = true;
 
-            const categoryHeader = document.createElement('h2');
-            categoryHeader.textContent = category;
-            categoryHeader.id = category; // Identifiant unique pour la catégorie
-            resultsContainer.appendChild(categoryHeader);
+            if (filteredItems.length > 0) {
+                hasResults = true;
 
-            const divTable = document.createElement('div');
-            divTable.className = "tableContent";
-            divTable.style.display = 'block'; // Afficher par défaut
+                const categoryHeader = document.createElement('h2');
+                categoryHeader.textContent = category;
+                categoryHeader.id = category; // Identifiant unique pour la catégorie
+                resultsContainer.appendChild(categoryHeader);
 
-            const table = document.createElement('table');
-            table.style.width = '100%';
-            table.setAttribute('cellpadding', '5');
-            const tableBody = document.createElement('tbody');
+                const divTable = document.createElement('div');
+                divTable.className = "tableContent";
+                divTable.style.display = 'block'; // Afficher par défaut
 
-            const tableHeader = document.createElement('thead');
-            const headerRow = document.createElement('tr');
+                const table = document.createElement('table');
+                table.style.width = '100%';
+                table.setAttribute('cellpadding', '5');
+                const tableBody = document.createElement('tbody');
 
-            if (standardLootCategories.includes(category)) {
-                const headers = ["Mission", "Mission Type", "Rotation", "Loot", "Category", "Percentage"];
+                const tableHeader = document.createElement('thead');
+                const headerRow = document.createElement('tr');
 
-                headers.forEach((headerText, index) => {
-                    const header = document.createElement('th');
-                    header.textContent = headerText;
-                    header.style.cursor = 'pointer';
-                    header.style.position = 'relative';
-                    header.style.paddingRight = '20px';
-                    header.onclick = () => sortTable(index, table);
-                    headerRow.appendChild(header);
+                if (standardLootCategories.includes(category)) {
+                    const headers = ["Mission", "Mission Type", "Rotation", "Loot", "Category", "Percentage"];
 
-                    const sortIcon = document.createElement('span');
-                    sortIcon.style.position = 'absolute';
-                    sortIcon.style.right = '5px';
-                    sortIcon.style.top = '50%';
-                    sortIcon.style.transform = 'translateY(-50%)';
-                    sortIcon.textContent = '↕';
-                    header.appendChild(sortIcon);
-                });
+                    headers.forEach((headerText, index) => {
+                        const header = document.createElement('th');
+                        header.textContent = headerText;
+                        header.style.cursor = 'pointer';
+                        header.style.position = 'relative';
+                        header.style.paddingRight = '20px';
+                        header.onclick = () => sortTable(index, table);
+                        headerRow.appendChild(header);
 
-                tableHeader.appendChild(headerRow);
-                table.appendChild(tableHeader);
+                        const sortIcon = document.createElement('span');
+                        sortIcon.style.position = 'absolute';
+                        sortIcon.style.right = '5px';
+                        sortIcon.style.top = '50%';
+                        sortIcon.style.transform = 'translateY(-50%)';
+                        sortIcon.textContent = '↕';
+                        header.appendChild(sortIcon);
+                    });
+
+                    tableHeader.appendChild(headerRow);
+                    table.appendChild(tableHeader);
+                    divTable.appendChild(table);
+
+                    filteredItems.forEach(item => {
+                        const row = document.createElement('tr');
+
+                        const missionCell = document.createElement('td');
+                        missionCell.textContent = item.Source;
+                        row.appendChild(missionCell);
+
+                        const missionTypeCell = document.createElement('td');
+                        missionTypeCell.textContent = item["Mission Type"];
+                        row.appendChild(missionTypeCell);
+
+                        const rotationCell = document.createElement('td');
+                        rotationCell.textContent = item.Rotation;
+                        rotationCell.style.backgroundColor = extractColorCode(item.Rotation, "rotation");
+                        row.appendChild(rotationCell);
+
+                        const objetCell = document.createElement('td');
+                        objetCell.textContent = item.Loot;
+                        row.appendChild(objetCell);
+
+                        const categorieCell = document.createElement('td');
+                        categorieCell.textContent = item.Rarity;
+                        categorieCell.style.backgroundColor = extractColorCode(item.Rarity, "rarity");
+                        row.appendChild(categorieCell);
+
+                        const pourcentageCell = document.createElement('td');
+                        pourcentageCell.textContent = item.Percentage;
+                        row.appendChild(pourcentageCell);
+
+                        tableBody.appendChild(row);
+                    });
+
+                } else if (modLootCategories.includes(category)) {
+                    const headers = ["Source", "Mod Drop Chance", "Mod", "Rarity", "Percentage", "Actual Chance"];
+
+                    headers.forEach((headerText, index) => {
+                        const header = document.createElement('th');
+                        header.textContent = headerText;
+                        header.style.cursor = 'pointer';
+                        header.style.position = 'relative';
+                        header.style.paddingRight = '20px';
+                        header.onclick = () => sortTable(index, table);
+                        headerRow.appendChild(header);
+
+                        const sortIcon = document.createElement('span');
+                        sortIcon.style.position = 'absolute';
+                        sortIcon.style.right = '5px';
+                        sortIcon.style.top = '50%';
+                        sortIcon.style.transform = 'translateY(-50%)';
+                        sortIcon.textContent = '↕';
+                        header.appendChild(sortIcon);
+                    });
+
+                    tableHeader.appendChild(headerRow);
+                    table.appendChild(tableHeader);
+                    divTable.appendChild(table);
+
+                    filteredItems.forEach(item => {
+                        const row = document.createElement('tr');
+
+                        const sourceCell = document.createElement('td');
+                        sourceCell.textContent = item.Source;
+                        row.appendChild(sourceCell);
+
+                        const modDropChanceTypeCell = document.createElement('td');
+                        modDropChanceTypeCell.textContent = item["Mod Drop Chance"];
+                        row.appendChild(modDropChanceTypeCell);
+
+                        const modCell = document.createElement('td');
+                        modCell.textContent = item.Loot;
+                        row.appendChild(modCell);
+
+                        const categorieCell = document.createElement('td');
+                        categorieCell.textContent = item.Rarity;
+                        categorieCell.style.backgroundColor = extractColorCode(item.Rarity, "rarity");
+                        row.appendChild(categorieCell);
+
+                        const pourcentageCell = document.createElement('td');
+                        pourcentageCell.textContent = item.Percentage;
+                        row.appendChild(pourcentageCell);
+
+                        const actualChanceCell = document.createElement('td');
+                        actualChanceCell.textContent = ((parseFloat(item["Mod Drop Chance"]) / 100) * (parseFloat(item.Percentage) / 100) * 100).toFixed(3) + '%';
+                        row.appendChild(actualChanceCell);
+
+                        tableBody.appendChild(row);
+                    });
+
+                } else if (modBountyCategories.includes(category)) {
+                    const headers = ["Bounty", "Rotation", "Stage", "Reward", "Rarity", "Percentage"];
+
+                    headers.forEach((headerText, index) => {
+                        const header = document.createElement('th');
+                        header.textContent = headerText;
+                        header.style.cursor = 'pointer';
+                        header.style.position = 'relative';
+                        header.style.paddingRight = '20px';
+                        header.onclick = () => sortTable(index, table);
+                        headerRow.appendChild(header);
+
+                        const sortIcon = document.createElement('span');
+                        sortIcon.style.position = 'absolute';
+                        sortIcon.style.right = '5px';
+                        sortIcon.style.top = '50%';
+                        sortIcon.style.transform = 'translateY(-50%)';
+                        sortIcon.textContent = '↕';
+                        header.appendChild(sortIcon);
+                    });
+
+                    tableHeader.appendChild(headerRow);
+                    table.appendChild(tableHeader);
+                    divTable.appendChild(table);
+
+                    filteredItems.forEach(item => {
+                        const row = document.createElement('tr');
+
+                        const sourceCell = document.createElement('td');
+                        sourceCell.textContent = item.Source;
+                        row.appendChild(sourceCell);
+
+                        const rotationCell = document.createElement('td');
+                        rotationCell.textContent = item.Rotation;
+                        row.appendChild(rotationCell);
+
+                        const stageCell = document.createElement('td');
+                        stageCell.textContent = item.Stage;
+                        row.appendChild(stageCell);
+
+                        const modCell = document.createElement('td');
+                        modCell.textContent = item.Loot;
+                        row.appendChild(modCell);
+
+                        const categorieCell = document.createElement('td');
+                        categorieCell.textContent = item.Rarity;
+                        categorieCell.style.backgroundColor = extractColorCode(item.Rarity, "rarity");
+                        row.appendChild(categorieCell);
+
+                        const pourcentageCell = document.createElement('td');
+                        pourcentageCell.textContent = item.Percentage;
+                        row.appendChild(pourcentageCell);
+
+                        tableBody.appendChild(row);
+                    });
+                } else if (modSourceCategories.includes(category)) {
+                    const headers = ["Source", "Loot Drop Chance", "Loot", "Rarity", "Percentage", "Actual Chance"];
+
+                    headers.forEach((headerText, index) => {
+                        const header = document.createElement('th');
+                        header.textContent = headerText;
+                        header.style.cursor = 'pointer';
+                        header.style.position = 'relative';
+                        header.style.paddingRight = '20px';
+                        header.onclick = () => sortTable(index, table);
+                        headerRow.appendChild(header);
+
+                        const sortIcon = document.createElement('span');
+                        sortIcon.style.position = 'absolute';
+                        sortIcon.style.right = '5px';
+                        sortIcon.style.top = '50%';
+                        sortIcon.style.transform = 'translateY(-50%)';
+                        sortIcon.textContent = '↕';
+                        header.appendChild(sortIcon);
+                    });
+
+                    tableHeader.appendChild(headerRow);
+                    table.appendChild(tableHeader);
+                    divTable.appendChild(table);
+
+                    filteredItems.forEach(item => {
+                        const row = document.createElement('tr');
+    
+                        const sourceCell = document.createElement('td');
+                        sourceCell.textContent = item.Source;
+                        row.appendChild(sourceCell);
+
+                        const lootDropChanceTypeCell = document.createElement('td');
+                        lootDropChanceTypeCell.textContent = item["Loot Drop Chance"];
+                        row.appendChild(lootDropChanceTypeCell);
+
+                        const dropCell = document.createElement('td');
+                        dropCell.textContent = item.Loot;
+                        row.appendChild(dropCell);
+
+                        const categorieCell = document.createElement('td');
+                        categorieCell.textContent = item.Rarity;
+                        categorieCell.style.backgroundColor = extractColorCode(item.Rarity, "rarity");
+                        row.appendChild(categorieCell);
+
+                        const pourcentageCell = document.createElement('td');
+                        pourcentageCell.textContent = item.Percentage;
+                        row.appendChild(pourcentageCell);
+
+                        const actualChanceCell = document.createElement('td');
+                        actualChanceCell.textContent = ((parseFloat(item["Loot Drop Chance"]) / 100) * (parseFloat(item.Percentage) / 100) * 100).toFixed(3) + '%';
+                        row.appendChild(actualChanceCell);
+
+                        tableBody.appendChild(row);
+                    });
+
+                }
+
+                table.appendChild(tableBody);
                 divTable.appendChild(table);
-
-                filteredItems.forEach(item => {
-                    const row = document.createElement('tr');
-
-                    const missionCell = document.createElement('td');
-                    missionCell.textContent = item.Source;
-                    row.appendChild(missionCell);
-
-                    const missionTypeCell = document.createElement('td');
-                    missionTypeCell.textContent = item["Mission Type"];
-                    row.appendChild(missionTypeCell);
-
-                    const rotationCell = document.createElement('td');
-                    rotationCell.textContent = item.Rotation;
-                    rotationCell.style.backgroundColor = extractColorCode(item.Rotation, "rotation");
-                    row.appendChild(rotationCell);
-
-                    const objetCell = document.createElement('td');
-                    objetCell.textContent = item.Loot;
-                    row.appendChild(objetCell);
-
-                    const categorieCell = document.createElement('td');
-                    categorieCell.textContent = item.Rarity;
-                    categorieCell.style.backgroundColor = extractColorCode(item.Rarity, "rarity");
-                    row.appendChild(categorieCell);
-
-                    const pourcentageCell = document.createElement('td');
-                    pourcentageCell.textContent = item.Percentage;
-                    row.appendChild(pourcentageCell);
-
-                    tableBody.appendChild(row);
-                });
-
-            } else if (modLootCategories.includes(category)) {
-                const headers = ["Source", "Mod Drop Chance", "Mod", "Rarity", "Percentage", "Actual Chance"];
-
-                headers.forEach((headerText, index) => {
-                    const header = document.createElement('th');
-                    header.textContent = headerText;
-                    header.style.cursor = 'pointer';
-                    header.style.position = 'relative';
-                    header.style.paddingRight = '20px';
-                    header.onclick = () => sortTable(index, table);
-                    headerRow.appendChild(header);
-
-                    const sortIcon = document.createElement('span');
-                    sortIcon.style.position = 'absolute';
-                    sortIcon.style.right = '5px';
-                    sortIcon.style.top = '50%';
-                    sortIcon.style.transform = 'translateY(-50%)';
-                    sortIcon.textContent = '↕';
-                    header.appendChild(sortIcon);
-                });
-
-                tableHeader.appendChild(headerRow);
-                table.appendChild(tableHeader);
-                divTable.appendChild(table);
-
-                filteredItems.forEach(item => {
-                    const row = document.createElement('tr');
-
-                    const sourceCell = document.createElement('td');
-                    sourceCell.textContent = item.Source;
-                    row.appendChild(sourceCell);
-
-                    const modDropChanceTypeCell = document.createElement('td');
-                    modDropChanceTypeCell.textContent = item["Mod Drop Chance"];
-                    row.appendChild(modDropChanceTypeCell);
-
-                    const modCell = document.createElement('td');
-                    modCell.textContent = item.Loot;
-                    row.appendChild(modCell);
-
-                    const categorieCell = document.createElement('td');
-                    categorieCell.textContent = item.Rarity;
-                    categorieCell.style.backgroundColor = extractColorCode(item.Rarity, "rarity");
-                    row.appendChild(categorieCell);
-
-                    const pourcentageCell = document.createElement('td');
-                    pourcentageCell.textContent = item.Percentage;
-                    row.appendChild(pourcentageCell);
-
-                    const actualChanceCell = document.createElement('td');
-                    actualChanceCell.textContent = ((parseFloat(item["Mod Drop Chance"]) / 100) * (parseFloat(item.Percentage) / 100) * 100).toFixed(3) + '%';
-                    row.appendChild(actualChanceCell);
-
-                    tableBody.appendChild(row);
-                });
-
-            } else if (modBountyCategories.includes(category)) {
-                const headers = ["Bounty", "Rotation", "Stage", "Reward", "Rarity", "Percentage"];
-
-                headers.forEach((headerText, index) => {
-                    const header = document.createElement('th');
-                    header.textContent = headerText;
-                    header.style.cursor = 'pointer';
-                    header.style.position = 'relative';
-                    header.style.paddingRight = '20px';
-                    header.onclick = () => sortTable(index, table);
-                    headerRow.appendChild(header);
-
-                    const sortIcon = document.createElement('span');
-                    sortIcon.style.position = 'absolute';
-                    sortIcon.style.right = '5px';
-                    sortIcon.style.top = '50%';
-                    sortIcon.style.transform = 'translateY(-50%)';
-                    sortIcon.textContent = '↕';
-                    header.appendChild(sortIcon);
-                });
-
-                tableHeader.appendChild(headerRow);
-                table.appendChild(tableHeader);
-                divTable.appendChild(table);
-
-                filteredItems.forEach(item => {
-                    const row = document.createElement('tr');
-
-                    const sourceCell = document.createElement('td');
-                    sourceCell.textContent = item.Source;
-                    row.appendChild(sourceCell);
-
-                    const rotationCell = document.createElement('td');
-                    rotationCell.textContent = item.Rotation;
-                    row.appendChild(rotationCell);
-
-                    const stageCell = document.createElement('td');
-                    stageCell.textContent = item.Stage;
-                    row.appendChild(stageCell);
-
-                    const modCell = document.createElement('td');
-                    modCell.textContent = item.Loot;
-                    row.appendChild(modCell);
-
-                    const categorieCell = document.createElement('td');
-                    categorieCell.textContent = item.Rarity;
-                    categorieCell.style.backgroundColor = extractColorCode(item.Rarity, "rarity");
-                    row.appendChild(categorieCell);
-
-                    const pourcentageCell = document.createElement('td');
-                    pourcentageCell.textContent = item.Percentage;
-                    row.appendChild(pourcentageCell);
-
-                    tableBody.appendChild(row);
-                });
-            } else if (modSourceCategories.includes(category)) {
-                const headers = ["Source", "Loot Drop Chance", "Loot", "Rarity", "Percentage", "Actual Chance"];
-
-                headers.forEach((headerText, index) => {
-                    const header = document.createElement('th');
-                    header.textContent = headerText;
-                    header.style.cursor = 'pointer';
-                    header.style.position = 'relative';
-                    header.style.paddingRight = '20px';
-                    header.onclick = () => sortTable(index, table);
-                    headerRow.appendChild(header);
-
-                    const sortIcon = document.createElement('span');
-                    sortIcon.style.position = 'absolute';
-                    sortIcon.style.right = '5px';
-                    sortIcon.style.top = '50%';
-                    sortIcon.style.transform = 'translateY(-50%)';
-                    sortIcon.textContent = '↕';
-                    header.appendChild(sortIcon);
-                });
-
-                tableHeader.appendChild(headerRow);
-                table.appendChild(tableHeader);
-                divTable.appendChild(table);
-
-                filteredItems.forEach(item => {
-                    const row = document.createElement('tr');
-
-                    const sourceCell = document.createElement('td');
-                    sourceCell.textContent = item.Source;
-                    row.appendChild(sourceCell);
-
-                    const lootDropChanceTypeCell = document.createElement('td');
-                    lootDropChanceTypeCell.textContent = item["Loot Drop Chance"];
-                    row.appendChild(lootDropChanceTypeCell);
-
-                    const dropCell = document.createElement('td');
-                    dropCell.textContent = item.Loot;
-                    row.appendChild(dropCell);
-
-                    const categorieCell = document.createElement('td');
-                    categorieCell.textContent = item.Rarity;
-                    categorieCell.style.backgroundColor = extractColorCode(item.Rarity, "rarity");
-                    row.appendChild(categorieCell);
-
-                    const pourcentageCell = document.createElement('td');
-                    pourcentageCell.textContent = item.Percentage;
-                    row.appendChild(pourcentageCell);
-
-                    const actualChanceCell = document.createElement('td');
-                    actualChanceCell.textContent = ((parseFloat(item["Loot Drop Chance"]) / 100) * (parseFloat(item.Percentage) / 100) * 100).toFixed(3) + '%';
-                    row.appendChild(actualChanceCell);
-
-                    tableBody.appendChild(row);
-                });
-
+                resultsContainer.appendChild(divTable);
             }
 
-            table.appendChild(tableBody);
-            divTable.appendChild(table);
-            resultsContainer.appendChild(divTable);
         }
     });
 
