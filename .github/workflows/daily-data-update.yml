@@ -1,0 +1,39 @@
+name: Daily Data Update
+
+on:
+  schedule:
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Run data-retriever.py
+      run: python data-retriever.py
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "GitHub Actions Theoooooo"
+        git config --global user.email "theoooooo-actions@github.com"
+        
+        COMMIT_DATE=$(date +"%Y-%m-%d")
+        
+        if git diff --quiet docs/data/data.json; then
+          echo "No change detected inside the dataset"
+        else
+          git add docs/data/data.json
+          git commit -m "Daily Update $COMMIT_DATE"
+          git push origin main
+        fi
