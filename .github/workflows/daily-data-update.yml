@@ -14,7 +14,6 @@ jobs:
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
-        ref: main
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -37,5 +36,4 @@ jobs:
         COMMIT_DATE=$(date +"%Y-%m-%d")
         git add docs/data/data.json
         git commit -m "Daily Update $COMMIT_DATE"
-        git branch -M main
-        git push origin main
+        git push origin master
