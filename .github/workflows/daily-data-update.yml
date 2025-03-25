@@ -8,12 +8,13 @@ on:
 jobs:
   update-data:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
+        ref: main
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -32,12 +33,9 @@ jobs:
       run: |
         git config --global user.name "GitHub Actions Theoooooo"
         git config --global user.email "theoooooo-actions@github.com"
-        
+
         COMMIT_DATE=$(date +"%Y-%m-%d")
-        
-        if git diff --quiet docs/data/data.json; then
-          echo "No change detected inside the dataset"
-        else
-          git commit -a -m "Daily Update $COMMIT_DATE"
-          git push origin main
-        fi
+        git add docs/data/data.json
+        git commit -m "Daily Update $COMMIT_DATE"
+        git branch -M main
+        git push origin main
