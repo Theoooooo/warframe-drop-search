@@ -1,7 +1,7 @@
 {
     "Timers": [
         {
-            "Update Data Set Date": "2026-09-25 05:33:15.518156"
+            "Update Data Set Date": "2026-09-26 05:39:59.260355"
         }
     ],
     "Missions:": [
@@ -73691,7 +73691,7 @@
             "Rotation": "no_rotation",
             "Loot": "10,000 Credits Cache",
             "Rarity": "Common",
-            "Percentage": "37.21%"
+            "Percentage": "35.56%"
         },
         {
             "Source": "Zariman/Halako Perimeter (Exterminate)",
@@ -73699,7 +73699,7 @@
             "Rotation": "no_rotation",
             "Loot": "900 Endo",
             "Rarity": "Uncommon",
-            "Percentage": "16.28%"
+            "Percentage": "15.56%"
         },
         {
             "Source": "Zariman/Halako Perimeter (Exterminate)",
@@ -73707,7 +73707,7 @@
             "Rotation": "no_rotation",
             "Loot": "Voidgel Orb",
             "Rarity": "Rare",
-            "Percentage": "9.30%"
+            "Percentage": "8.89%"
         },
         {
             "Source": "Zariman/Halako Perimeter (Exterminate)",
@@ -73715,7 +73715,7 @@
             "Rotation": "no_rotation",
             "Loot": "Entrati Lanthorn",
             "Rarity": "Rare",
-            "Percentage": "9.30%"
+            "Percentage": "8.89%"
         },
         {
             "Source": "Zariman/Halako Perimeter (Exterminate)",
@@ -73723,7 +73723,7 @@
             "Rotation": "no_rotation",
             "Loot": "Galeforce Dawn",
             "Rarity": "Rare",
-            "Percentage": "4.65%"
+            "Percentage": "4.44%"
         },
         {
             "Source": "Zariman/Halako Perimeter (Exterminate)",
@@ -73731,7 +73731,7 @@
             "Rotation": "no_rotation",
             "Loot": "Meso Y2 Relic",
             "Rarity": "Rare",
-            "Percentage": "2.33%"
+            "Percentage": "2.22%"
         },
         {
             "Source": "Zariman/Halako Perimeter (Exterminate)",
@@ -73739,7 +73739,7 @@
             "Rotation": "no_rotation",
             "Loot": "Meso K9 Relic",
             "Rarity": "Rare",
-            "Percentage": "2.33%"
+            "Percentage": "2.22%"
         },
         {
             "Source": "Zariman/Halako Perimeter (Exterminate)",
@@ -73747,7 +73747,7 @@
             "Rotation": "no_rotation",
             "Loot": "Meso V17 Relic",
             "Rarity": "Rare",
-            "Percentage": "2.33%"
+            "Percentage": "2.22%"
         },
         {
             "Source": "Zariman/Halako Perimeter (Exterminate)",
@@ -73755,7 +73755,7 @@
             "Rotation": "no_rotation",
             "Loot": "Meso D8 Relic",
             "Rarity": "Rare",
-            "Percentage": "2.33%"
+            "Percentage": "2.22%"
         },
         {
             "Source": "Zariman/Halako Perimeter (Exterminate)",
@@ -73763,7 +73763,7 @@
             "Rotation": "no_rotation",
             "Loot": "Meso V13 Relic",
             "Rarity": "Rare",
-            "Percentage": "2.33%"
+            "Percentage": "2.22%"
         },
         {
             "Source": "Zariman/Halako Perimeter (Exterminate)",
@@ -73771,7 +73771,7 @@
             "Rotation": "no_rotation",
             "Loot": "Meso A12 Relic",
             "Rarity": "Rare",
-            "Percentage": "2.33%"
+            "Percentage": "2.22%"
         },
         {
             "Source": "Zariman/Halako Perimeter (Exterminate)",
@@ -73779,7 +73779,7 @@
             "Rotation": "no_rotation",
             "Loot": "Meso D9 Relic",
             "Rarity": "Rare",
-            "Percentage": "2.33%"
+            "Percentage": "2.22%"
         },
         {
             "Source": "Zariman/Halako Perimeter (Exterminate)",
@@ -73787,7 +73787,7 @@
             "Rotation": "no_rotation",
             "Loot": "Meso C11 Relic",
             "Rarity": "Rare",
-            "Percentage": "2.33%"
+            "Percentage": "2.22%"
         },
         {
             "Source": "Zariman/Halako Perimeter (Exterminate)",
@@ -73795,7 +73795,7 @@
             "Rotation": "no_rotation",
             "Loot": "Narin Blueprint",
             "Rarity": "Rare",
-            "Percentage": "4.65%"
+            "Percentage": "8.89%"
         },
         {
             "Source": "Zariman/Tuvul Commons (Void Cascade)",
@@ -74363,7 +74363,7 @@
             "Rotation": "no_rotation",
             "Loot": "10,000 Credits Cache",
             "Rarity": "Common",
-            "Percentage": "37.21%"
+            "Percentage": "35.56%"
         },
         {
             "Source": "Zariman/The Greenway (Mobile Defense)",
@@ -74371,7 +74371,7 @@
             "Rotation": "no_rotation",
             "Loot": "900 Endo",
             "Rarity": "Uncommon",
-            "Percentage": "16.28%"
+            "Percentage": "15.56%"
         },
         {
             "Source": "Zariman/The Greenway (Mobile Defense)",
@@ -74379,7 +74379,7 @@
             "Rotation": "no_rotation",
             "Loot": "Voidgel Orb",
             "Rarity": "Rare",
-            "Percentage": "9.30%"
+            "Percentage": "8.89%"
         },
         {
             "Source": "Zariman/The Greenway (Mobile Defense)",
@@ -74387,7 +74387,7 @@
             "Rotation": "no_rotation",
             "Loot": "Entrati Lanthorn",
             "Rarity": "Rare",
-            "Percentage": "9.30%"
+            "Percentage": "8.89%"
         },
         {
             "Source": "Zariman/The Greenway (Mobile Defense)",
@@ -74395,7 +74395,7 @@
             "Rotation": "no_rotation",
             "Loot": "Galeforce Dawn",
             "Rarity": "Rare",
-            "Percentage": "4.65%"
+            "Percentage": "4.44%"
         },
         {
             "Source": "Zariman/The Greenway (Mobile Defense)",
@@ -74403,7 +74403,7 @@
             "Rotation": "no_rotation",
             "Loot": "Meso Y2 Relic",
             "Rarity": "Rare",
-            "Percentage": "2.33%"
+            "Percentage": "2.22%"
         },
         {
             "Source": "Zariman/The Greenway (Mobile Defense)",
@@ -74411,7 +74411,7 @@
             "Rotation": "no_rotation",
             "Loot": "Meso K9 Relic",
             "Rarity": "Rare",
-            "Percentage": "2.33%"
+            "Percentage": "2.22%"
         },
         {
             "Source": "Zariman/The Greenway (Mobile Defense)",
@@ -74419,7 +74419,7 @@
             "Rotation": "no_rotation",
             "Loot": "Meso V17 Relic",
             "Rarity": "Rare",
-            "Percentage": "2.33%"
+            "Percentage": "2.22%"
         },
         {
             "Source": "Zariman/The Greenway (Mobile Defense)",
@@ -74427,7 +74427,7 @@
             "Rotation": "no_rotation",
             "Loot": "Meso D8 Relic",
             "Rarity": "Rare",
-            "Percentage": "2.33%"
+            "Percentage": "2.22%"
         },
         {
             "Source": "Zariman/The Greenway (Mobile Defense)",
@@ -74435,7 +74435,7 @@
             "Rotation": "no_rotation",
             "Loot": "Meso V13 Relic",
             "Rarity": "Rare",
-            "Percentage": "2.33%"
+            "Percentage": "2.22%"
         },
         {
             "Source": "Zariman/The Greenway (Mobile Defense)",
@@ -74443,7 +74443,7 @@
             "Rotation": "no_rotation",
             "Loot": "Meso A12 Relic",
             "Rarity": "Rare",
-            "Percentage": "2.33%"
+            "Percentage": "2.22%"
         },
         {
             "Source": "Zariman/The Greenway (Mobile Defense)",
@@ -74451,7 +74451,7 @@
             "Rotation": "no_rotation",
             "Loot": "Meso D9 Relic",
             "Rarity": "Rare",
-            "Percentage": "2.33%"
+            "Percentage": "2.22%"
         },
         {
             "Source": "Zariman/The Greenway (Mobile Defense)",
@@ -74459,7 +74459,7 @@
             "Rotation": "no_rotation",
             "Loot": "Meso C11 Relic",
             "Rarity": "Rare",
-            "Percentage": "2.33%"
+            "Percentage": "2.22%"
         },
         {
             "Source": "Zariman/The Greenway (Mobile Defense)",
@@ -74467,7 +74467,7 @@
             "Rotation": "no_rotation",
             "Loot": "Narin Blueprint",
             "Rarity": "Rare",
-            "Percentage": "4.65%"
+            "Percentage": "8.89%"
         },
         {
             "Source": "Duviri/The Circuit (The Circuit)",
@@ -210835,7 +210835,7 @@
             "Source": "Neo K10 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
-            "Loot": "Gyre Systems Blueprint",
+            "Loot": "Gyre Prime Systems Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "25.33%"
         },
@@ -210883,7 +210883,7 @@
             "Source": "Neo K10 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Gyre Systems Blueprint",
+            "Loot": "Gyre Prime Systems Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "23.33%"
         },
@@ -210931,7 +210931,7 @@
             "Source": "Neo K10 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Gyre Systems Blueprint",
+            "Loot": "Gyre Prime Systems Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "20.00%"
         },
@@ -210979,7 +210979,7 @@
             "Source": "Neo K10 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Gyre Systems Blueprint",
+            "Loot": "Gyre Prime Systems Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "16.67%"
         },
