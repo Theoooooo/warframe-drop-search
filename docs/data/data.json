@@ -1,7 +1,7 @@
 {
     "Timers": [
         {
-            "Update Data Set Date": "2026-10-07 06:39:37.059728"
+            "Update Data Set Date": "2026-10-08 06:45:54.398943"
         }
     ],
     "Missions:": [
@@ -87539,7 +87539,7 @@
             "Source": "Axi B10 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
-            "Loot": "Epitaph Prime Barrel",
+            "Loot": "Nami Skyla Prime Handle",
             "Rarity": "Uncommon",
             "Percentage": "11.00%"
         },
@@ -87547,7 +87547,7 @@
             "Source": "Axi B10 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
-            "Loot": "Sevagoth Prime Systems Blueprint",
+            "Loot": "Burston Prime Barrel",
             "Rarity": "Uncommon",
             "Percentage": "11.00%"
         },
@@ -87555,7 +87555,7 @@
             "Source": "Axi B10 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
-            "Loot": "Nautilus Prime Blueprint",
+            "Loot": "Nautilus Prime Carapace",
             "Rarity": "Uncommon",
             "Percentage": "25.33%"
         },
@@ -87563,7 +87563,7 @@
             "Source": "Axi B10 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
-            "Loot": "Burston Prime Blueprint",
+            "Loot": "Burston Prime Stock",
             "Rarity": "Uncommon",
             "Percentage": "25.33%"
         },
@@ -87587,7 +87587,7 @@
             "Source": "Axi B10 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Epitaph Prime Barrel",
+            "Loot": "Nami Skyla Prime Handle",
             "Rarity": "Uncommon",
             "Percentage": "13.00%"
         },
@@ -87595,7 +87595,7 @@
             "Source": "Axi B10 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Sevagoth Prime Systems Blueprint",
+            "Loot": "Burston Prime Barrel",
             "Rarity": "Uncommon",
             "Percentage": "13.00%"
         },
@@ -87603,7 +87603,7 @@
             "Source": "Axi B10 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Nautilus Prime Blueprint",
+            "Loot": "Nautilus Prime Carapace",
             "Rarity": "Uncommon",
             "Percentage": "23.33%"
         },
@@ -87611,7 +87611,7 @@
             "Source": "Axi B10 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Burston Prime Blueprint",
+            "Loot": "Burston Prime Stock",
             "Rarity": "Uncommon",
             "Percentage": "23.33%"
         },
@@ -87635,7 +87635,7 @@
             "Source": "Axi B10 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Epitaph Prime Barrel",
+            "Loot": "Nami Skyla Prime Handle",
             "Rarity": "Uncommon",
             "Percentage": "17.00%"
         },
@@ -87643,7 +87643,7 @@
             "Source": "Axi B10 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Sevagoth Prime Systems Blueprint",
+            "Loot": "Burston Prime Barrel",
             "Rarity": "Uncommon",
             "Percentage": "17.00%"
         },
@@ -87651,7 +87651,7 @@
             "Source": "Axi B10 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Nautilus Prime Blueprint",
+            "Loot": "Nautilus Prime Carapace",
             "Rarity": "Uncommon",
             "Percentage": "20.00%"
         },
@@ -87659,7 +87659,7 @@
             "Source": "Axi B10 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Burston Prime Blueprint",
+            "Loot": "Burston Prime Stock",
             "Rarity": "Uncommon",
             "Percentage": "20.00%"
         },
@@ -87683,7 +87683,7 @@
             "Source": "Axi B10 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Epitaph Prime Barrel",
+            "Loot": "Nami Skyla Prime Handle",
             "Rarity": "Uncommon",
             "Percentage": "20.00%"
         },
@@ -87691,7 +87691,7 @@
             "Source": "Axi B10 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Sevagoth Prime Systems Blueprint",
+            "Loot": "Burston Prime Barrel",
             "Rarity": "Uncommon",
             "Percentage": "20.00%"
         },
@@ -87699,7 +87699,7 @@
             "Source": "Axi B10 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Nautilus Prime Blueprint",
+            "Loot": "Nautilus Prime Carapace",
             "Rarity": "Uncommon",
             "Percentage": "16.67%"
         },
@@ -87707,7 +87707,7 @@
             "Source": "Axi B10 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Burston Prime Blueprint",
+            "Loot": "Burston Prime Stock",
             "Rarity": "Uncommon",
             "Percentage": "16.67%"
         },
@@ -104230,20 +104230,20 @@
             "Loot": "Okina Prime Blade",
             "Rarity": "Uncommon",
             "Percentage": "16.67%"
+        },
+        {
+            "Source": "Axi N14 Relic (Intact)",
+            "Mission Type": "Intact",
+            "Rotation": "no_rotation",
+            "Loot": "Nautilus Prime Cerebrum",
+            "Rarity": "Rare",
+            "Percentage": "2.00%"
         },
         {
             "Source": "Axi N14 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
             "Loot": "Nami Skyla Prime Blade",
-            "Rarity": "Rare",
-            "Percentage": "2.00%"
-        },
-        {
-            "Source": "Axi N14 Relic (Intact)",
-            "Mission Type": "Intact",
-            "Rotation": "no_rotation",
-            "Loot": "Nautilus Prime Carapace",
             "Rarity": "Uncommon",
             "Percentage": "11.00%"
         },
@@ -104251,7 +104251,7 @@
             "Source": "Axi N14 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
-            "Loot": "Ballistica Prime Upper Limb",
+            "Loot": "Bronco Prime Barrel",
             "Rarity": "Uncommon",
             "Percentage": "11.00%"
         },
@@ -104283,7 +104283,7 @@
             "Source": "Axi N14 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Nami Skyla Prime Blade",
+            "Loot": "Nautilus Prime Cerebrum",
             "Rarity": "Rare",
             "Percentage": "4.00%"
         },
@@ -104291,7 +104291,7 @@
             "Source": "Axi N14 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Nautilus Prime Carapace",
+            "Loot": "Nami Skyla Prime Blade",
             "Rarity": "Uncommon",
             "Percentage": "13.00%"
         },
@@ -104299,7 +104299,7 @@
             "Source": "Axi N14 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Ballistica Prime Upper Limb",
+            "Loot": "Bronco Prime Barrel",
             "Rarity": "Uncommon",
             "Percentage": "13.00%"
         },
@@ -104331,7 +104331,7 @@
             "Source": "Axi N14 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Nami Skyla Prime Blade",
+            "Loot": "Nautilus Prime Cerebrum",
             "Rarity": "Rare",
             "Percentage": "6.00%"
         },
@@ -104339,7 +104339,7 @@
             "Source": "Axi N14 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Nautilus Prime Carapace",
+            "Loot": "Nami Skyla Prime Blade",
             "Rarity": "Uncommon",
             "Percentage": "17.00%"
         },
@@ -104347,7 +104347,7 @@
             "Source": "Axi N14 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Ballistica Prime Upper Limb",
+            "Loot": "Bronco Prime Barrel",
             "Rarity": "Uncommon",
             "Percentage": "17.00%"
         },
@@ -104379,7 +104379,7 @@
             "Source": "Axi N14 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Nami Skyla Prime Blade",
+            "Loot": "Nautilus Prime Cerebrum",
             "Rarity": "Uncommon",
             "Percentage": "10.00%"
         },
@@ -104387,7 +104387,7 @@
             "Source": "Axi N14 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Nautilus Prime Carapace",
+            "Loot": "Nami Skyla Prime Blade",
             "Rarity": "Uncommon",
             "Percentage": "20.00%"
         },
@@ -104395,7 +104395,7 @@
             "Source": "Axi N14 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Ballistica Prime Upper Limb",
+            "Loot": "Bronco Prime Barrel",
             "Rarity": "Uncommon",
             "Percentage": "20.00%"
         },
@@ -151275,7 +151275,7 @@
             "Source": "Lith S20 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
-            "Loot": "Sevagoth Prime Blueprint",
+            "Loot": "Sevagoth Prime Chassis Blueprint",
             "Rarity": "Rare",
             "Percentage": "2.00%"
         },
@@ -151283,7 +151283,7 @@
             "Source": "Lith S20 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
-            "Loot": "Hydroid Prime Blueprint",
+            "Loot": "Sevagoth Prime Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "11.00%"
         },
@@ -151291,7 +151291,7 @@
             "Source": "Lith S20 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
-            "Loot": "Bronco Prime Barrel",
+            "Loot": "Epitaph Prime Barrel",
             "Rarity": "Uncommon",
             "Percentage": "11.00%"
         },
@@ -151299,7 +151299,7 @@
             "Source": "Lith S20 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
-            "Loot": "Ballistica Prime Receiver",
+            "Loot": "Ballistica Prime Lower Limb",
             "Rarity": "Uncommon",
             "Percentage": "25.33%"
         },
@@ -151307,7 +151307,7 @@
             "Source": "Lith S20 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
-            "Loot": "Burston Prime Receiver",
+            "Loot": "Bronco Prime Receiver",
             "Rarity": "Uncommon",
             "Percentage": "25.33%"
         },
@@ -151323,7 +151323,7 @@
             "Source": "Lith S20 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Sevagoth Prime Blueprint",
+            "Loot": "Sevagoth Prime Chassis Blueprint",
             "Rarity": "Rare",
             "Percentage": "4.00%"
         },
@@ -151331,7 +151331,7 @@
             "Source": "Lith S20 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Hydroid Prime Blueprint",
+            "Loot": "Sevagoth Prime Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "13.00%"
         },
@@ -151339,7 +151339,7 @@
             "Source": "Lith S20 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Bronco Prime Barrel",
+            "Loot": "Epitaph Prime Barrel",
             "Rarity": "Uncommon",
             "Percentage": "13.00%"
         },
@@ -151347,7 +151347,7 @@
             "Source": "Lith S20 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Ballistica Prime Receiver",
+            "Loot": "Ballistica Prime Lower Limb",
             "Rarity": "Uncommon",
             "Percentage": "23.33%"
         },
@@ -151355,7 +151355,7 @@
             "Source": "Lith S20 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Burston Prime Receiver",
+            "Loot": "Bronco Prime Receiver",
             "Rarity": "Uncommon",
             "Percentage": "23.33%"
         },
@@ -151371,7 +151371,7 @@
             "Source": "Lith S20 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Sevagoth Prime Blueprint",
+            "Loot": "Sevagoth Prime Chassis Blueprint",
             "Rarity": "Rare",
             "Percentage": "6.00%"
         },
@@ -151379,7 +151379,7 @@
             "Source": "Lith S20 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Hydroid Prime Blueprint",
+            "Loot": "Sevagoth Prime Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "17.00%"
         },
@@ -151387,7 +151387,7 @@
             "Source": "Lith S20 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Bronco Prime Barrel",
+            "Loot": "Epitaph Prime Barrel",
             "Rarity": "Uncommon",
             "Percentage": "17.00%"
         },
@@ -151395,7 +151395,7 @@
             "Source": "Lith S20 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Ballistica Prime Receiver",
+            "Loot": "Ballistica Prime Lower Limb",
             "Rarity": "Uncommon",
             "Percentage": "20.00%"
         },
@@ -151403,7 +151403,7 @@
             "Source": "Lith S20 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Burston Prime Receiver",
+            "Loot": "Bronco Prime Receiver",
             "Rarity": "Uncommon",
             "Percentage": "20.00%"
         },
@@ -151419,7 +151419,7 @@
             "Source": "Lith S20 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Sevagoth Prime Blueprint",
+            "Loot": "Sevagoth Prime Chassis Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "10.00%"
         },
@@ -151427,7 +151427,7 @@
             "Source": "Lith S20 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Hydroid Prime Blueprint",
+            "Loot": "Sevagoth Prime Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "20.00%"
         },
@@ -151435,7 +151435,7 @@
             "Source": "Lith S20 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Bronco Prime Barrel",
+            "Loot": "Epitaph Prime Barrel",
             "Rarity": "Uncommon",
             "Percentage": "20.00%"
         },
@@ -151443,7 +151443,7 @@
             "Source": "Lith S20 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Ballistica Prime Receiver",
+            "Loot": "Ballistica Prime Lower Limb",
             "Rarity": "Uncommon",
             "Percentage": "16.67%"
         },
@@ -151451,7 +151451,7 @@
             "Source": "Lith S20 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Burston Prime Receiver",
+            "Loot": "Bronco Prime Receiver",
             "Rarity": "Uncommon",
             "Percentage": "16.67%"
         },
@@ -168947,7 +168947,7 @@
             "Source": "Meso E8 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
-            "Loot": "Ballistica Prime Lower Limb",
+            "Loot": "Nautilus Prime Systems",
             "Rarity": "Uncommon",
             "Percentage": "11.00%"
         },
@@ -168955,7 +168955,7 @@
             "Source": "Meso E8 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
-            "Loot": "Hydroid Prime Neuroptics Blueprint",
+            "Loot": "Hydroid Prime Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "11.00%"
         },
@@ -168971,7 +168971,7 @@
             "Source": "Meso E8 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
-            "Loot": "Bronco Prime Receiver",
+            "Loot": "Nami Skyla Prime Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "25.33%"
         },
@@ -168995,7 +168995,7 @@
             "Source": "Meso E8 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Ballistica Prime Lower Limb",
+            "Loot": "Nautilus Prime Systems",
             "Rarity": "Uncommon",
             "Percentage": "13.00%"
         },
@@ -169003,7 +169003,7 @@
             "Source": "Meso E8 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Hydroid Prime Neuroptics Blueprint",
+            "Loot": "Hydroid Prime Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "13.00%"
         },
@@ -169019,7 +169019,7 @@
             "Source": "Meso E8 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Bronco Prime Receiver",
+            "Loot": "Nami Skyla Prime Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "23.33%"
         },
@@ -169043,7 +169043,7 @@
             "Source": "Meso E8 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Ballistica Prime Lower Limb",
+            "Loot": "Nautilus Prime Systems",
             "Rarity": "Uncommon",
             "Percentage": "17.00%"
         },
@@ -169051,7 +169051,7 @@
             "Source": "Meso E8 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Hydroid Prime Neuroptics Blueprint",
+            "Loot": "Hydroid Prime Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "17.00%"
         },
@@ -169067,7 +169067,7 @@
             "Source": "Meso E8 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Bronco Prime Receiver",
+            "Loot": "Nami Skyla Prime Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "20.00%"
         },
@@ -169091,7 +169091,7 @@
             "Source": "Meso E8 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Ballistica Prime Lower Limb",
+            "Loot": "Nautilus Prime Systems",
             "Rarity": "Uncommon",
             "Percentage": "20.00%"
         },
@@ -169099,7 +169099,7 @@
             "Source": "Meso E8 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Hydroid Prime Neuroptics Blueprint",
+            "Loot": "Hydroid Prime Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "20.00%"
         },
@@ -169115,7 +169115,7 @@
             "Source": "Meso E8 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Bronco Prime Receiver",
+            "Loot": "Nami Skyla Prime Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "16.67%"
         },
@@ -209843,7 +209843,7 @@
             "Source": "Neo H5 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
-            "Loot": "Sevagoth Prime Chassis Blueprint",
+            "Loot": "Ballistica Prime String",
             "Rarity": "Uncommon",
             "Percentage": "11.00%"
         },
@@ -209851,7 +209851,7 @@
             "Source": "Neo H5 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
-            "Loot": "Nautilus Prime Systems",
+            "Loot": "Ballistica Prime Upper Limb",
             "Rarity": "Uncommon",
             "Percentage": "11.00%"
         },
@@ -209859,7 +209859,7 @@
             "Source": "Neo H5 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
-            "Loot": "Burston Prime Stock",
+            "Loot": "Epitaph Prime Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "25.33%"
         },
@@ -209867,7 +209867,7 @@
             "Source": "Neo H5 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
-            "Loot": "Nami Skyla Prime Handle",
+            "Loot": "Burston Prime Receiver",
             "Rarity": "Uncommon",
             "Percentage": "25.33%"
         },
@@ -209891,7 +209891,7 @@
             "Source": "Neo H5 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Sevagoth Prime Chassis Blueprint",
+            "Loot": "Ballistica Prime String",
             "Rarity": "Uncommon",
             "Percentage": "13.00%"
         },
@@ -209899,7 +209899,7 @@
             "Source": "Neo H5 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Nautilus Prime Systems",
+            "Loot": "Ballistica Prime Upper Limb",
             "Rarity": "Uncommon",
             "Percentage": "13.00%"
         },
@@ -209907,7 +209907,7 @@
             "Source": "Neo H5 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Burston Prime Stock",
+            "Loot": "Epitaph Prime Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "23.33%"
         },
@@ -209915,7 +209915,7 @@
             "Source": "Neo H5 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Nami Skyla Prime Handle",
+            "Loot": "Burston Prime Receiver",
             "Rarity": "Uncommon",
             "Percentage": "23.33%"
         },
@@ -209939,7 +209939,7 @@
             "Source": "Neo H5 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Sevagoth Prime Chassis Blueprint",
+            "Loot": "Ballistica Prime String",
             "Rarity": "Uncommon",
             "Percentage": "17.00%"
         },
@@ -209947,7 +209947,7 @@
             "Source": "Neo H5 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Nautilus Prime Systems",
+            "Loot": "Ballistica Prime Upper Limb",
             "Rarity": "Uncommon",
             "Percentage": "17.00%"
         },
@@ -209955,7 +209955,7 @@
             "Source": "Neo H5 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Burston Prime Stock",
+            "Loot": "Epitaph Prime Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "20.00%"
         },
@@ -209963,7 +209963,7 @@
             "Source": "Neo H5 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Nami Skyla Prime Handle",
+            "Loot": "Burston Prime Receiver",
             "Rarity": "Uncommon",
             "Percentage": "20.00%"
         },
@@ -209987,7 +209987,7 @@
             "Source": "Neo H5 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Sevagoth Prime Chassis Blueprint",
+            "Loot": "Ballistica Prime String",
             "Rarity": "Uncommon",
             "Percentage": "20.00%"
         },
@@ -209995,7 +209995,7 @@
             "Source": "Neo H5 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Nautilus Prime Systems",
+            "Loot": "Ballistica Prime Upper Limb",
             "Rarity": "Uncommon",
             "Percentage": "20.00%"
         },
@@ -210003,7 +210003,7 @@
             "Source": "Neo H5 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Burston Prime Stock",
+            "Loot": "Epitaph Prime Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "16.67%"
         },
@@ -210011,7 +210011,7 @@
             "Source": "Neo H5 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Nami Skyla Prime Handle",
+            "Loot": "Burston Prime Receiver",
             "Rarity": "Uncommon",
             "Percentage": "16.67%"
         },
@@ -217707,7 +217707,7 @@
             "Source": "Neo N25 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
-            "Loot": "Nautilus Prime Cerebrum",
+            "Loot": "Nautilus Prime Blueprint",
             "Rarity": "Rare",
             "Percentage": "2.00%"
         },
@@ -217715,7 +217715,7 @@
             "Source": "Neo N25 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
-            "Loot": "Nami Skyla Prime Blueprint",
+            "Loot": "Hydroid Prime Neuroptics Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "11.00%"
         },
@@ -217723,7 +217723,7 @@
             "Source": "Neo N25 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
-            "Loot": "Burston Prime Barrel",
+            "Loot": "Ballistica Prime Receiver",
             "Rarity": "Uncommon",
             "Percentage": "11.00%"
         },
@@ -217731,7 +217731,7 @@
             "Source": "Neo N25 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
-            "Loot": "Epitaph Prime Blueprint",
+            "Loot": "Sevagoth Prime Systems Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "25.33%"
         },
@@ -217739,7 +217739,7 @@
             "Source": "Neo N25 Relic (Intact)",
             "Mission Type": "Intact",
             "Rotation": "no_rotation",
-            "Loot": "Ballistica Prime String",
+            "Loot": "Burston Prime Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "25.33%"
         },
@@ -217755,7 +217755,7 @@
             "Source": "Neo N25 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Nautilus Prime Cerebrum",
+            "Loot": "Nautilus Prime Blueprint",
             "Rarity": "Rare",
             "Percentage": "4.00%"
         },
@@ -217763,7 +217763,7 @@
             "Source": "Neo N25 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Nami Skyla Prime Blueprint",
+            "Loot": "Hydroid Prime Neuroptics Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "13.00%"
         },
@@ -217771,7 +217771,7 @@
             "Source": "Neo N25 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Burston Prime Barrel",
+            "Loot": "Ballistica Prime Receiver",
             "Rarity": "Uncommon",
             "Percentage": "13.00%"
         },
@@ -217779,7 +217779,7 @@
             "Source": "Neo N25 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Epitaph Prime Blueprint",
+            "Loot": "Sevagoth Prime Systems Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "23.33%"
         },
@@ -217787,7 +217787,7 @@
             "Source": "Neo N25 Relic (Exceptional)",
             "Mission Type": "Exceptional",
             "Rotation": "no_rotation",
-            "Loot": "Ballistica Prime String",
+            "Loot": "Burston Prime Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "23.33%"
         },
@@ -217803,7 +217803,7 @@
             "Source": "Neo N25 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Nautilus Prime Cerebrum",
+            "Loot": "Nautilus Prime Blueprint",
             "Rarity": "Rare",
             "Percentage": "6.00%"
         },
@@ -217811,7 +217811,7 @@
             "Source": "Neo N25 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Nami Skyla Prime Blueprint",
+            "Loot": "Hydroid Prime Neuroptics Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "17.00%"
         },
@@ -217819,7 +217819,7 @@
             "Source": "Neo N25 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Burston Prime Barrel",
+            "Loot": "Ballistica Prime Receiver",
             "Rarity": "Uncommon",
             "Percentage": "17.00%"
         },
@@ -217827,7 +217827,7 @@
             "Source": "Neo N25 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Epitaph Prime Blueprint",
+            "Loot": "Sevagoth Prime Systems Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "20.00%"
         },
@@ -217835,7 +217835,7 @@
             "Source": "Neo N25 Relic (Flawless)",
             "Mission Type": "Flawless",
             "Rotation": "no_rotation",
-            "Loot": "Ballistica Prime String",
+            "Loot": "Burston Prime Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "20.00%"
         },
@@ -217851,7 +217851,7 @@
             "Source": "Neo N25 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Nautilus Prime Cerebrum",
+            "Loot": "Nautilus Prime Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "10.00%"
         },
@@ -217859,7 +217859,7 @@
             "Source": "Neo N25 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Nami Skyla Prime Blueprint",
+            "Loot": "Hydroid Prime Neuroptics Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "20.00%"
         },
@@ -217867,7 +217867,7 @@
             "Source": "Neo N25 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Burston Prime Barrel",
+            "Loot": "Ballistica Prime Receiver",
             "Rarity": "Uncommon",
             "Percentage": "20.00%"
         },
@@ -217875,7 +217875,7 @@
             "Source": "Neo N25 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Epitaph Prime Blueprint",
+            "Loot": "Sevagoth Prime Systems Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "16.67%"
         },
@@ -217883,7 +217883,7 @@
             "Source": "Neo N25 Relic (Radiant)",
             "Mission Type": "Radiant",
             "Rotation": "no_rotation",
-            "Loot": "Ballistica Prime String",
+            "Loot": "Burston Prime Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "16.67%"
         },
@@ -247412,7 +247412,7 @@
             "Percentage": "100.00%"
         },
         {
-            "Source": "The Descendia:  Infernum 20 Triple Arcane Rewards (Steel Path)",
+            "Source": "The Descendia: Infernum 20 Triple Arcane Rewards (Steel Path)",
             "Mission Type": "Steel Path",
             "Rotation": "no_rotation",
             "Loot": "3X Primary Bulwark",
@@ -247420,7 +247420,7 @@
             "Percentage": "11.11%"
         },
         {
-            "Source": "The Descendia:  Infernum 20 Triple Arcane Rewards (Steel Path)",
+            "Source": "The Descendia: Infernum 20 Triple Arcane Rewards (Steel Path)",
             "Mission Type": "Steel Path",
             "Rotation": "no_rotation",
             "Loot": "3X Melee Careen",
@@ -247428,7 +247428,7 @@
             "Percentage": "11.11%"
         },
         {
-            "Source": "The Descendia:  Infernum 20 Triple Arcane Rewards (Steel Path)",
+            "Source": "The Descendia: Infernum 20 Triple Arcane Rewards (Steel Path)",
             "Mission Type": "Steel Path",
             "Rotation": "no_rotation",
             "Loot": "3X Primary Overcharge",
@@ -247436,7 +247436,7 @@
             "Percentage": "11.11%"
         },
         {
-            "Source": "The Descendia:  Infernum 20 Triple Arcane Rewards (Steel Path)",
+            "Source": "The Descendia: Infernum 20 Triple Arcane Rewards (Steel Path)",
             "Mission Type": "Steel Path",
             "Rotation": "no_rotation",
             "Loot": "3X Arcane Expertise",
@@ -247444,7 +247444,7 @@
             "Percentage": "11.11%"
         },
         {
-            "Source": "The Descendia:  Infernum 20 Triple Arcane Rewards (Steel Path)",
+            "Source": "The Descendia: Infernum 20 Triple Arcane Rewards (Steel Path)",
             "Mission Type": "Steel Path",
             "Rotation": "no_rotation",
             "Loot": "3X Arcane Persistence",
@@ -247452,7 +247452,7 @@
             "Percentage": "11.11%"
         },
         {
-            "Source": "The Descendia:  Infernum 20 Triple Arcane Rewards (Steel Path)",
+            "Source": "The Descendia: Infernum 20 Triple Arcane Rewards (Steel Path)",
             "Mission Type": "Steel Path",
             "Rotation": "no_rotation",
             "Loot": "3X Arcane Circumvent",
@@ -247460,7 +247460,7 @@
             "Percentage": "11.11%"
         },
         {
-            "Source": "The Descendia:  Infernum 20 Triple Arcane Rewards (Steel Path)",
+            "Source": "The Descendia: Infernum 20 Triple Arcane Rewards (Steel Path)",
             "Mission Type": "Steel Path",
             "Rotation": "no_rotation",
             "Loot": "3X Secondary Irradiate",
@@ -247468,7 +247468,7 @@
             "Percentage": "11.11%"
         },
         {
-            "Source": "The Descendia:  Infernum 20 Triple Arcane Rewards (Steel Path)",
+            "Source": "The Descendia: Infernum 20 Triple Arcane Rewards (Steel Path)",
             "Mission Type": "Steel Path",
             "Rotation": "no_rotation",
             "Loot": "3X Arcane Concentration",
@@ -247476,7 +247476,7 @@
             "Percentage": "11.11%"
         },
         {
-            "Source": "The Descendia:  Infernum 20 Triple Arcane Rewards (Steel Path)",
+            "Source": "The Descendia: Infernum 20 Triple Arcane Rewards (Steel Path)",
             "Mission Type": "Steel Path",
             "Rotation": "no_rotation",
             "Loot": "3X Primary Debilitate",
@@ -247484,7 +247484,7 @@
             "Percentage": "11.11%"
         },
         {
-            "Source": "Roathe",
+            "Source": "The Descendia: Roathe",
             "Mission Type": "no_mission_type",
             "Rotation": "no_rotation",
             "Loot": "Uriel Chassis Blueprint",
@@ -247492,7 +247492,7 @@
             "Percentage": "12.50%"
         },
         {
-            "Source": "Roathe",
+            "Source": "The Descendia: Roathe",
             "Mission Type": "no_mission_type",
             "Rotation": "no_rotation",
             "Loot": "Uriel Neuroptics Blueprint",
@@ -247500,7 +247500,7 @@
             "Percentage": "12.50%"
         },
         {
-            "Source": "Roathe",
+            "Source": "The Descendia: Roathe",
             "Mission Type": "no_mission_type",
             "Rotation": "no_rotation",
             "Loot": "Uriel Systems Blueprint",
@@ -247508,7 +247508,7 @@
             "Percentage": "12.50%"
         },
         {
-            "Source": "Roathe",
+            "Source": "The Descendia: Roathe",
             "Mission Type": "no_mission_type",
             "Rotation": "no_rotation",
             "Loot": "Vinquibus Barrel Blueprint",
@@ -247516,7 +247516,7 @@
             "Percentage": "12.50%"
         },
         {
-            "Source": "Roathe",
+            "Source": "The Descendia: Roathe",
             "Mission Type": "no_mission_type",
             "Rotation": "no_rotation",
             "Loot": "Vinquibus Blade Blueprint",
@@ -247524,7 +247524,7 @@
             "Percentage": "12.50%"
         },
         {
-            "Source": "Roathe",
+            "Source": "The Descendia: Roathe",
             "Mission Type": "no_mission_type",
             "Rotation": "no_rotation",
             "Loot": "Vinquibus Receiver Blueprint",
@@ -247532,7 +247532,7 @@
             "Percentage": "12.50%"
         },
         {
-            "Source": "Roathe",
+            "Source": "The Descendia: Roathe",
             "Mission Type": "no_mission_type",
             "Rotation": "no_rotation",
             "Loot": "Vinquibus Stock Blueprint",
@@ -247540,12 +247540,268 @@
             "Percentage": "12.50%"
         },
         {
-            "Source": "Roathe",
+            "Source": "The Descendia: Roathe",
             "Mission Type": "no_mission_type",
             "Rotation": "no_rotation",
             "Loot": "Vinquibus Blueprint",
             "Rarity": "Uncommon",
             "Percentage": "12.50%"
+        },
+        {
+            "Source": "The Icebind: Crested Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "Riven Transmuter",
+            "Rarity": "Rare",
+            "Percentage": "5.00%"
+        },
+        {
+            "Source": "The Icebind: Crested Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "Veiled Riven Cipher",
+            "Rarity": "Rare",
+            "Percentage": "5.00%"
+        },
+        {
+            "Source": "The Icebind: Crested Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "Omni Forma",
+            "Rarity": "Uncommon",
+            "Percentage": "10.00%"
+        },
+        {
+            "Source": "The Icebind: Crested Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "Forma Bundle",
+            "Rarity": "Uncommon",
+            "Percentage": "10.00%"
+        },
+        {
+            "Source": "The Icebind: Crested Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "Melee Riven Mod",
+            "Rarity": "Uncommon",
+            "Percentage": "10.50%"
+        },
+        {
+            "Source": "The Icebind: Crested Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "Pistol Riven Mod",
+            "Rarity": "Rare",
+            "Percentage": "8.75%"
+        },
+        {
+            "Source": "The Icebind: Crested Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "Rifle Riven Mod",
+            "Rarity": "Rare",
+            "Percentage": "8.75%"
+        },
+        {
+            "Source": "The Icebind: Crested Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "Shotgun Riven Mod",
+            "Rarity": "Rare",
+            "Percentage": "4.55%"
+        },
+        {
+            "Source": "The Icebind: Crested Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "Archgun Riven Mod",
+            "Rarity": "Ultra Rare",
+            "Percentage": "1.22%"
+        },
+        {
+            "Source": "The Icebind: Crested Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "Companion Weapon Riven Mod",
+            "Rarity": "Ultra Rare",
+            "Percentage": "1.22%"
+        },
+        {
+            "Source": "The Icebind: Crested Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "Azure Archon Shard",
+            "Rarity": "Uncommon",
+            "Percentage": "11.67%"
+        },
+        {
+            "Source": "The Icebind: Crested Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "Crimson Archon Shard",
+            "Rarity": "Uncommon",
+            "Percentage": "11.67%"
+        },
+        {
+            "Source": "The Icebind: Crested Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "Amber Archon Shard",
+            "Rarity": "Uncommon",
+            "Percentage": "11.67%"
+        },
+        {
+            "Source": "The Icebind: Crested Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "7500X Kuva",
+            "Rarity": "Very Common",
+            "Percentage": "69.00%"
+        },
+        {
+            "Source": "The Icebind: Crested Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "17500X Kuva",
+            "Rarity": "Uncommon",
+            "Percentage": "30.00%"
+        },
+        {
+            "Source": "The Icebind: Crested Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "100000X Kuva",
+            "Rarity": "Ultra Rare",
+            "Percentage": "1.00%"
+        },
+        {
+            "Source": "The Icebind: Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "Crimson Archon Shard",
+            "Rarity": "Rare",
+            "Percentage": "3.33%"
+        },
+        {
+            "Source": "The Icebind: Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "Azure Archon Shard",
+            "Rarity": "Rare",
+            "Percentage": "3.33%"
+        },
+        {
+            "Source": "The Icebind: Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "Amber Archon Shard",
+            "Rarity": "Rare",
+            "Percentage": "3.33%"
+        },
+        {
+            "Source": "The Icebind: Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "Forma",
+            "Rarity": "Uncommon",
+            "Percentage": "16.88%"
+        },
+        {
+            "Source": "The Icebind: Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "200X Vosfor",
+            "Rarity": "Uncommon",
+            "Percentage": "16.88%"
+        },
+        {
+            "Source": "The Icebind: Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "3 Day Affinity Booster",
+            "Rarity": "Rare",
+            "Percentage": "5.63%"
+        },
+        {
+            "Source": "The Icebind: Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "3 Day Resource Drop Chance Booster",
+            "Rarity": "Rare",
+            "Percentage": "5.63%"
+        },
+        {
+            "Source": "The Icebind: Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "3 Day Resource Booster",
+            "Rarity": "Rare",
+            "Percentage": "5.63%"
+        },
+        {
+            "Source": "The Icebind: Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "3 Day Credit Booster",
+            "Rarity": "Rare",
+            "Percentage": "5.63%"
+        },
+        {
+            "Source": "The Icebind: Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "Melee Riven Mod",
+            "Rarity": "Uncommon",
+            "Percentage": "11.81%"
+        },
+        {
+            "Source": "The Icebind: Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "Pistol Riven Mod",
+            "Rarity": "Rare",
+            "Percentage": "8.44%"
+        },
+        {
+            "Source": "The Icebind: Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "Rifle Riven Mod",
+            "Rarity": "Rare",
+            "Percentage": "8.44%"
+        },
+        {
+            "Source": "The Icebind: Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "Shotgun Riven Mod",
+            "Rarity": "Rare",
+            "Percentage": "5.06%"
+        },
+        {
+            "Source": "The Icebind: Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "1750X Kuva",
+            "Rarity": "Common",
+            "Percentage": "65.00%"
+        },
+        {
+            "Source": "The Icebind: Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "3500X Kuva",
+            "Rarity": "Uncommon",
+            "Percentage": "30.00%"
+        },
+        {
+            "Source": "The Icebind: Frozen Chests",
+            "Mission Type": "no_mission_type",
+            "Rotation": "no_rotation",
+            "Loot": "7500X Kuva",
+            "Rarity": "Rare",
+            "Percentage": "5.00%"
         }
     ],
     "Sorties:": [
@@ -265615,7 +265871,112 @@
             "Percentage": "16.67%"
         },
         {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
             "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
             "Mod Drop Chance": "100.00%",
             "Loot": "Primary Merciless",
             "Rarity": "Uncommon",
@@ -265636,7 +265997,112 @@
             "Percentage": "16.67%"
         },
         {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
             "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
             "Mod Drop Chance": "100.00%",
             "Loot": "Primary Merciless",
             "Rarity": "Uncommon",
@@ -268730,7 +269196,112 @@
             "Percentage": "16.67%"
         },
         {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
             "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
             "Mod Drop Chance": "100.00%",
             "Loot": "Secondary Merciless",
             "Rarity": "Uncommon",
@@ -268751,7 +269322,112 @@
             "Percentage": "16.67%"
         },
         {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
             "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Merciless",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
             "Mod Drop Chance": "100.00%",
             "Loot": "Secondary Merciless",
             "Rarity": "Uncommon",
@@ -288960,7 +289636,112 @@
             "Percentage": "16.67%"
         },
         {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
             "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
             "Mod Drop Chance": "100.00%",
             "Loot": "Primary Dexterity",
             "Rarity": "Uncommon",
@@ -288981,7 +289762,112 @@
             "Percentage": "16.67%"
         },
         {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
             "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
             "Mod Drop Chance": "100.00%",
             "Loot": "Primary Dexterity",
             "Rarity": "Uncommon",
@@ -291655,7 +292541,112 @@
             "Percentage": "16.67%"
         },
         {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
             "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
             "Mod Drop Chance": "100.00%",
             "Loot": "Secondary Dexterity",
             "Rarity": "Uncommon",
@@ -291676,7 +292667,112 @@
             "Percentage": "16.67%"
         },
         {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
             "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Dexterity",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
             "Mod Drop Chance": "100.00%",
             "Loot": "Secondary Dexterity",
             "Rarity": "Uncommon",
@@ -300013,7 +301109,112 @@
             "Percentage": "16.67%"
         },
         {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
             "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
             "Mod Drop Chance": "100.00%",
             "Loot": "Secondary Deadhead",
             "Rarity": "Uncommon",
@@ -300034,7 +301235,112 @@
             "Percentage": "16.67%"
         },
         {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
             "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Secondary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
             "Mod Drop Chance": "100.00%",
             "Loot": "Secondary Deadhead",
             "Rarity": "Uncommon",
@@ -312956,7 +314262,112 @@
             "Percentage": "16.67%"
         },
         {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Misery (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
             "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Angst (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Torment (Level 0 - 100)",
             "Mod Drop Chance": "100.00%",
             "Loot": "Primary Deadhead",
             "Rarity": "Uncommon",
@@ -312977,7 +314388,112 @@
             "Percentage": "16.67%"
         },
         {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Violence (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
             "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Malice (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Primary Deadhead",
+            "Rarity": "Uncommon",
+            "Percentage": "16.67%"
+        },
+        {
+            "Source": "Mania (Level 0 - 100)",
             "Mod Drop Chance": "100.00%",
             "Loot": "Primary Deadhead",
             "Rarity": "Uncommon",
@@ -321143,6 +322659,27 @@
             "Percentage": "10.00%"
         },
         {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Melee Duplicate",
+            "Rarity": "Uncommon",
+            "Percentage": "10.00%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Melee Duplicate",
+            "Rarity": "Uncommon",
+            "Percentage": "10.00%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Melee Duplicate",
+            "Rarity": "Uncommon",
+            "Percentage": "10.00%"
+        },
+        {
             "Source": "Corrupted Jackal",
             "Mod Drop Chance": "100.00%",
             "Loot": "Rune Marrow",
@@ -321580,6 +323117,27 @@
             "Source": "Narmer Thumper",
             "Mod Drop Chance": "400.00%",
             "Loot": "Nistlepod",
+            "Rarity": "Rare",
+            "Percentage": "4.17%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Tauforged Azure Archon Shard",
+            "Rarity": "Rare",
+            "Percentage": "4.17%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Tauforged Azure Archon Shard",
+            "Rarity": "Rare",
+            "Percentage": "4.17%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Tauforged Azure Archon Shard",
             "Rarity": "Rare",
             "Percentage": "4.17%"
         },
@@ -322685,6 +324243,48 @@
         {
             "Source": "Entrati Netracell Coffer (Level 0 - 100)",
             "Mod Drop Chance": "100.00%",
+            "Loot": "Melee Crescendo",
+            "Rarity": "Uncommon",
+            "Percentage": "10.00%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Melee Crescendo",
+            "Rarity": "Uncommon",
+            "Percentage": "10.00%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Melee Crescendo",
+            "Rarity": "Uncommon",
+            "Percentage": "10.00%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Tauforged Amber Archon Shard",
+            "Rarity": "Rare",
+            "Percentage": "4.17%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Tauforged Amber Archon Shard",
+            "Rarity": "Rare",
+            "Percentage": "4.17%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Tauforged Amber Archon Shard",
+            "Rarity": "Rare",
+            "Percentage": "4.17%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
             "Loot": "Tauforged Amber Archon Shard",
             "Rarity": "Rare",
             "Percentage": "4.17%"
@@ -323306,6 +324906,27 @@
             "Percentage": "4.17%"
         },
         {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Tauforged Crimson Archon Shard",
+            "Rarity": "Rare",
+            "Percentage": "4.17%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Tauforged Crimson Archon Shard",
+            "Rarity": "Rare",
+            "Percentage": "4.17%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Tauforged Crimson Archon Shard",
+            "Rarity": "Rare",
+            "Percentage": "4.17%"
+        },
+        {
             "Source": "Rare Grineer Storage Container",
             "Mod Drop Chance": "100.00%",
             "Loot": "Detonite Injector",
@@ -323318,6 +324939,27 @@
             "Loot": "Detonite Injector",
             "Rarity": "Very Common",
             "Percentage": "100.00%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Amber Archon Shard",
+            "Rarity": "Uncommon",
+            "Percentage": "17.50%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Amber Archon Shard",
+            "Rarity": "Uncommon",
+            "Percentage": "17.50%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Amber Archon Shard",
+            "Rarity": "Uncommon",
+            "Percentage": "17.50%"
         },
         {
             "Source": "Entrati Netracell Coffer (Level 0 - 100)",
@@ -323817,6 +325459,20 @@
             "Percentage": "33.33%"
         },
         {
+            "Source": "Forgotten Grineer Storage Container (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Grineer Forest Industry Scene",
+            "Rarity": "Common",
+            "Percentage": "33.33%"
+        },
+        {
+            "Source": "Forgotten Grineer Storage Container (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Grineer Forest Industry Scene",
+            "Rarity": "Common",
+            "Percentage": "33.33%"
+        },
+        {
             "Source": "Rare Orokin Storage Container",
             "Mod Drop Chance": "25.00%",
             "Loot": "Forma",
@@ -323866,6 +325522,20 @@
             "Percentage": "33.33%"
         },
         {
+            "Source": "Forgotten Grineer Storage Container (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Grineer Forest Factory Scene",
+            "Rarity": "Common",
+            "Percentage": "33.33%"
+        },
+        {
+            "Source": "Forgotten Grineer Storage Container (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Grineer Forest Factory Scene",
+            "Rarity": "Common",
+            "Percentage": "33.33%"
+        },
+        {
             "Source": "Tusk Thumper Doma",
             "Mod Drop Chance": "800.00%",
             "Loot": "Azurite",
@@ -323906,6 +325576,27 @@
             "Loot": "Azurite",
             "Rarity": "Rare",
             "Percentage": "4.17%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Azure Archon Shard",
+            "Rarity": "Uncommon",
+            "Percentage": "17.50%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Azure Archon Shard",
+            "Rarity": "Uncommon",
+            "Percentage": "17.50%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Azure Archon Shard",
+            "Rarity": "Uncommon",
+            "Percentage": "17.50%"
         },
         {
             "Source": "Entrati Netracell Coffer (Level 0 - 100)",
@@ -326967,6 +328658,27 @@
             "Percentage": "17.50%"
         },
         {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Crimson Archon Shard",
+            "Rarity": "Uncommon",
+            "Percentage": "17.50%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Crimson Archon Shard",
+            "Rarity": "Uncommon",
+            "Percentage": "17.50%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Crimson Archon Shard",
+            "Rarity": "Uncommon",
+            "Percentage": "17.50%"
+        },
+        {
             "Source": "Tusk Thumper Doma",
             "Mod Drop Chance": "800.00%",
             "Loot": "Cuthol Tendrils",
@@ -327014,6 +328726,27 @@
             "Loot": "Vitus Essence",
             "Rarity": "Very Common",
             "Percentage": "100.00%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Melee Arcane Adapter",
+            "Rarity": "Uncommon",
+            "Percentage": "15.00%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Melee Arcane Adapter",
+            "Rarity": "Uncommon",
+            "Percentage": "15.00%"
+        },
+        {
+            "Source": "Entrati Netracell Coffer (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Melee Arcane Adapter",
+            "Rarity": "Uncommon",
+            "Percentage": "15.00%"
         },
         {
             "Source": "Entrati Netracell Coffer (Level 0 - 100)",
@@ -328204,6 +329937,20 @@
             "Loot": "H-09 Apex Turret Sumdali",
             "Rarity": "Very Common",
             "Percentage": "100.00%"
+        },
+        {
+            "Source": "Forgotten Grineer Storage Container (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Grineer Forest Water Pump Scene",
+            "Rarity": "Common",
+            "Percentage": "33.33%"
+        },
+        {
+            "Source": "Forgotten Grineer Storage Container (Level 0 - 100)",
+            "Mod Drop Chance": "100.00%",
+            "Loot": "Grineer Forest Water Pump Scene",
+            "Rarity": "Common",
+            "Percentage": "33.33%"
         },
         {
             "Source": "Forgotten Grineer Storage Container (Level 0 - 100)",
