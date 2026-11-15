@@ -1,6 +1,6 @@
 # CONTENT_SUMMARY — Warframe Drop Search
 
-**Version courante : 0.3.0**
+**Version courante : 0.4.0**
 
 ## Objet du projet
 
@@ -33,7 +33,7 @@ docs/                                     # Racine servie telle quelle par GitHu
 └── data/data.json                        # Jeu de données généré (~12,8 Mo, ~53 000 lignes)
 memory/CONTENT_SUMMARY.md                 # Mémoire et historique des versions
 ai-rules/                                 # Règles de travail (ignoré par Git)
-README.md, readme_gif.gif, requirements.md
+README.md, requirements.md
 ```
 
 ## Stack
@@ -84,11 +84,11 @@ Règles d'extraction à connaître :
 
 ## Fonctionnement de l'interface
 
-- **Recherche** : sur le nom du loot ou de la source, à partir de 3 caractères, avec temporisation de 300 ms et indicateur de chargement. Menu déroulant des catégories avec compteurs ; choisir une catégorie sans recherche la parcourt entièrement. Bouton d'effacement dans la barre. L'URL suit la recherche (`?q=&and=&category=`).
-- **Conditions « AND »** : le bouton « AND » de la barre ajoute jusqu'à 5 champs supplémentaires. Une ligne est gardée si elle contient le texte principal et chaque condition non vide, dans la source ou le loot. Les conditions ne s'appliquent que si la recherche principale est active (3 caractères).
+- **Recherche** : sur le nom du loot ou de la source, à partir de 3 caractères, avec temporisation de 300 ms et indicateur de chargement. Menu déroulant des catégories avec compteurs ; choisir une catégorie sans recherche la parcourt entièrement. Bouton d'effacement dans la barre. L'URL suit la recherche (`?q=&and=&or=&category=`).
+- **Conditions « AND » et « OR »** : les boutons « AND » et « OR » de la barre ajoutent jusqu'à 5 champs supplémentaires au total. « OR » lie plus fort que « AND » : une condition « OR » est une alternative au terme qui la précède (`A AND B OR C` se lit `A AND (B OR C)`). La recherche est donc une suite de groupes reliés par « AND » ; une ligne est gardée si, dans chaque groupe, au moins un terme figure dans sa source ou son loot. L'étiquette d'une condition est cliquable et bascule entre les deux opérateurs. Les conditions ne s'appliquent que si la recherche principale est active (3 caractères).
 - **Tableaux** : compacts, triables, paginés par 100 lignes. Badges de couleur pour la rareté et les rotations A, B, C. La colonne Rotation est masquée dans une catégorie où aucune ligne n'a de rotation. Un clic sur un nom de source ou de loot relance la recherche sur ce nom, toutes catégories confondues. Badge « Vault » à droite des reliques vaultées.
 - **Historique de recherche** : les 10 dernières recherches validées, affichées sous la barre au focus.
-- **Recherches sauvegardées** : onglet « Saved » du header. Sauvegarde du texte, des conditions « AND » et de la catégorie, renommage, suppression, champ de filtre. 20 au plus.
+- **Recherches sauvegardées** : onglet « Saved » du header. Sauvegarde du texte, des conditions « AND » et « OR » et de la catégorie, renommage, suppression, champ de filtre. 20 au plus.
 - **Tracker** : onglet « Tracker » du header. Un loot se suit depuis le bouton cible à droite de son nom dans un tableau ; il affiche alors « − quantité + » sur toutes ses lignes. À 0 il reste suivi par défaut ; l'option « Remove tracked items at 0 » le retire automatiquement. Hors de cette option, la suppression n'est possible que dans la fenêtre du tracker (une par une ou « Delete all »), qui a aussi un champ de filtre. Le préfixe de quantité est retiré du nom (`100X Oxium` et `200X Oxium` partagent le compteur `Oxium`). Les reliques se suivent aussi depuis la colonne source du tableau Relics, un compteur par raffinement ; `(Intact)` et l'absence de raffinement désignent le même élément. 30 au plus.
 - **Changements de données** : bouton « Changes » à gauche de la date de mise à jour. Affiche les changements d'une date à la fois, la plus récente par défaut, en tableaux au format des résultats précédés d'une colonne `+` (ligne ajoutée) ou `−` (ligne retirée). Un bouton à côté du titre ouvre un calendrier où seuls les jours ayant des changements sont sélectionnables.
 - **Options** : bouton à gauche de la bascule de thème. Une option à ce jour, sous forme d'interrupteur : retrait automatique des éléments suivis arrivés à 0 (désactivé par défaut).
@@ -116,7 +116,7 @@ Les cookies sont limités au chemin du site, durent 400 jours, sont en `SameSite
 - L'interface n'a pas de tests automatisés et n'a été vérifiée qu'à la main dans un navigateur.
 - Le workflow quotidien installe encore `bs4` et `requests`, devenus inutiles, et ne lance pas les tests avant de publier.
 - Le robot quotidien pousse directement sur `master`, ce qui déroge à la règle de branche protégée du workflow Git.
-- `requirements.md` décrit l'ancien site et `readme_gif.gif` le montre.
+- Le README n'a plus d'aperçu animé du site : l'ancien `readme_gif.gif` montrait l'interface d'avant la refonte et a été supprimé.
 - Le parseur ignore en silence une ligne dont il ne reconnaît pas la forme à l'intérieur d'une table reconnue ; c'est ainsi que les rotations de « Dynamic Location Rewards » ont été perdues avant correction.
 - Dans « Dynamic Location Rewards », la parenthèse du nom n'est pas toujours un type de mission (`Void Storm (Earth)` donne `Earth`).
 - Le favicon est un SVG seul : Safari ne l'affiche pas.
@@ -124,6 +124,25 @@ Les cookies sont limités au chemin du site, durent 400 jours, sont en `SameSite
 ---
 
 # Historique des versions
+
+## Version 0.4.0 — 2026-11-15 19:20
+
+Condition « OR » dans la recherche et remise à jour des fichiers d'accompagnement.
+
+### Ajouté
+- Une recherche accepte des conditions « OR » en plus des « AND », 5 au total. Une condition « OR » est une alternative au terme qui la précède : une mission ET « Relic » OU « Endo » liste les reliques et l'Endo de cette mission.
+- L'étiquette d'une condition est cliquable et bascule entre « AND » et « OR ».
+- Les conditions « OR » figurent dans l'adresse partageable et dans les recherches sauvegardées, dont la liste affiche l'expression avec ses parenthèses.
+
+### Modifié
+- `requirements.md` décrit les prérequis réels : aucune dépendance, Python 3.10 pour le service local, l'extraction et les tests.
+- Les sauvegardes antérieures restent lisibles ; leurs conditions sont traitées comme des « AND ».
+
+### Supprimé
+- `readme_gif.gif`, qui montrait l'interface d'avant la refonte, et son affichage dans le README.
+
+### Corrigé
+[Aucun]
 
 ## Version 0.3.0 — 2026-11-15 18:35
 
