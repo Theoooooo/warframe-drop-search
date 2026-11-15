@@ -9,7 +9,7 @@
     var VAULTED_KEY = 'Vaulted Relics';
     var HISTORY_DATA_KEY = 'Update History';
     var MIN_QUERY_LENGTH = 3;
-    var MAX_CONDITIONS = 5;   // conditions « AND » par recherche
+    var MAX_CONDITIONS = 5;   // conditions « AND » et « OR » par recherche
     var DEBOUNCE_MS = 300;
     var PAGE_SIZE = 100;
     var EMPTY_VALUE = '—';
@@ -94,6 +94,7 @@
         clear: document.getElementById('search-clear'),
         save: document.getElementById('search-save'),
         and: document.getElementById('search-and'),
+        or: document.getElementById('search-or'),
         conditions: document.getElementById('search-conditions'),
         searchField: document.getElementById('search-field'),
         history: document.getElementById('search-history'),
@@ -153,7 +154,7 @@
 
     var state = {
         categories: [],      // [{ name, columns, rows }]
-        extra: [],           // conditions « AND » : texte brut de chaque champ
+        extra: [],           // conditions : { op: 'and' | 'or', value: texte brut du champ }
         query: '',           // requête en minuscules, espaces de bord retirés
         activeCategory: null,
         views: {},           // nom de catégorie -> { sortIndex, ascending, page }
@@ -297,16 +298,18 @@
         if (!isSearching()) {
             return category.rows;
         }
-        var terms = [state.query].concat(extraValues().map(function (value) {
-            return value.toLowerCase();
-        }));
+        // Chaque groupe doit avoir au moins un terme présent dans la ligne.
+        var groups = termGroups(state.query, activeConditions()).map(function (group) {
+            return group.map(function (term) {
+                return term.toLowerCase();
+            });
+        });
         return category.rows.filter(function (row) {
-            for (var index = 0; index < terms.length; index += 1) {
-                if (row.searchText.indexOf(terms[index]) === -1) {
-                    return false;
-                }
-            }
-            return true;
+            return groups.every(function (group) {
+                return group.some(function (term) {
+                    return row.searchText.indexOf(term) !== -1;
+                });
+            });
         });
     }
 
@@ -680,40 +683,89 @@
         syncUrl();
     }
 
-    // --- Conditions « AND » -------------------------------------------------
+    // --- Conditions « AND » et « OR » ---------------------------------------
     //
-    // Chaque condition est un champ supplémentaire sous la barre de recherche.
-    // Elle restreint le résultat de la recherche principale : une ligne n'est
-    // gardée que si elle contient aussi ce texte (dans la source ou le loot).
+    // Chaque condition est un champ supplémentaire sous la barre de recherche,
+    // précédé de son opérateur. « OR » lie plus fort que « AND » : une
+    // condition « OR » est une alternative au terme qui la précède.
+    //
+    //   A AND B OR C   se lit   A AND (B OR C)
+    //   A OR B AND C   se lit   (A OR B) AND C
+    //
+    // La recherche est donc une suite de groupes reliés par « AND », chaque
+    // groupe étant une liste d'alternatives reliées par « OR ». Une ligne est
+    // gardée si, dans chaque groupe, au moins un terme figure dans sa source
+    // ou son loot.
 
-    // Conditions réellement appliquées : les champs laissés vides sont ignorés.
-    function extraValues() {
-        var values = [];
-        state.extra.forEach(function (value) {
-            var trimmed = String(value).trim();
-            if (trimmed !== '') {
-                values.push(trimmed);
-            }
-        });
-        return values;
-    }
-
+    // Normalise des conditions venues de l'état, de l'URL ou d'un cookie.
+    // Formes acceptées : "texte" (AND, format des sauvegardes d'origine),
+    // ["or", "texte"] (cookie) et { op, value } (état).
     function sanitizeExtra(values) {
         var kept = [];
-        (Array.isArray(values) ? values : []).forEach(function (value) {
+        (Array.isArray(values) ? values : []).forEach(function (item) {
+            var op = 'and';
+            var value = item;
+            if (Array.isArray(item)) {
+                op = item[0];
+                value = item[1];
+            } else if (item && typeof item === 'object') {
+                op = item.op;
+                value = item.value;
+            }
             if (typeof value === 'string' && value.trim() !== '' && kept.length < MAX_CONDITIONS) {
-                kept.push(value.trim());
+                kept.push({ op: op === 'or' ? 'or' : 'and', value: value.trim() });
             }
         });
         return kept;
     }
 
-    function syncAndButton() {
+    // Conditions réellement appliquées : les champs laissés vides sont ignorés.
+    function activeConditions() {
+        return sanitizeExtra(state.extra);
+    }
+
+    // Découpe une recherche en groupes d'alternatives (voir en-tête).
+    function termGroups(query, conditions) {
+        var groups = query ? [[query]] : [];
+        conditions.forEach(function (condition) {
+            if (condition.op === 'or' && groups.length > 0) {
+                groups[groups.length - 1].push(condition.value);
+            } else {
+                groups.push([condition.value]);
+            }
+        });
+        return groups;
+    }
+
+    // Écriture lisible d'une recherche, parenthèses comprises quand elles
+    // lèvent une ambiguïté : "A" AND ("B" OR "C").
+    function formatExpression(query, conditions, quote) {
+        var groups = termGroups(query, conditions);
+        return groups.map(function (group) {
+            var text = group.map(function (term) {
+                return quote + term + quote;
+            }).join(' OR ');
+            return group.length > 1 && groups.length > 1 ? '(' + text + ')' : text;
+        }).join(' AND ');
+    }
+
+    // Empreinte des conditions, pour comparer deux recherches sans tenir
+    // compte de la casse.
+    function conditionsKey(conditions) {
+        return conditions.map(function (condition) {
+            return condition.op + '\t' + condition.value.toLowerCase();
+        }).join('\n');
+    }
+
+    function syncConditionButtons() {
         var full = state.extra.length >= MAX_CONDITIONS;
-        elements.and.disabled = full;
-        elements.and.title = full
-            ? 'A search can have up to ' + MAX_CONDITIONS + ' AND conditions'
-            : 'Add an AND condition to refine the results';
+        [[elements.and, 'AND', 'narrow the results'], [elements.or, 'OR', 'add an alternative to the previous term']]
+            .forEach(function (item) {
+                item[0].disabled = full;
+                item[0].title = full
+                    ? 'A search can have up to ' + MAX_CONDITIONS + ' conditions'
+                    : 'Add an ' + item[1] + ' condition: ' + item[2];
+            });
     }
 
     var scheduleRender = debounce(function () {
@@ -724,32 +776,55 @@
         render();
     }, DEBOUNCE_MS);
 
-    // Reconstruit les champs à partir de state.extra. `focusIndex` désigne le
-    // champ qui doit recevoir le curseur (condition tout juste ajoutée).
-    function renderConditions(focusIndex) {
+    function applyConditions() {
+        syncSaveButton();
+        if (state.categories.length > 0) {
+            resetViews();
+            render();
+        }
+    }
+
+    // Reconstruit les champs à partir de state.extra. `focusIndex` et
+    // `focusPart` ('input' ou 'operator') désignent l'élément qui doit
+    // recevoir le focus après reconstruction.
+    function renderConditions(focusIndex, focusPart) {
         clear(elements.conditions);
         elements.conditions.hidden = state.extra.length === 0;
         var focusTarget = null;
 
-        state.extra.forEach(function (value, index) {
-            var row = createElement('div', 'condition');
-            row.appendChild(createElement('span', 'condition__label', 'AND'));
+        state.extra.forEach(function (condition, index) {
+            var isOr = condition.op === 'or';
+            var row = createElement('div', 'condition' + (isOr ? ' condition--or' : ''));
+
+            // L'étiquette est un bouton : un clic bascule entre AND et OR.
+            var operator = createElement('button', 'condition__label', isOr ? 'OR' : 'AND');
+            operator.type = 'button';
+            operator.title = 'Switch to ' + (isOr ? 'AND' : 'OR');
+            operator.setAttribute('aria-label',
+                'Condition ' + (index + 1) + ' is ' + (isOr ? 'OR' : 'AND') + ', switch to ' + (isOr ? 'AND' : 'OR'));
+            operator.addEventListener('click', function () {
+                condition.op = isOr ? 'and' : 'or';
+                renderConditions(index, 'operator');
+                applyConditions();
+            });
 
             var input = createElement('input', 'input condition__input');
             input.type = 'search';
-            input.value = value;
-            input.placeholder = 'Refine the results: loot or source name';
+            input.value = condition.value;
+            input.placeholder = isOr
+                ? 'Alternative to the previous term'
+                : 'Refine the results: loot or source name';
             input.autocomplete = 'off';
             input.spellcheck = false;
-            input.setAttribute('aria-label', 'AND condition ' + (index + 1));
+            input.setAttribute('aria-label', (isOr ? 'OR' : 'AND') + ' condition ' + (index + 1));
             input.addEventListener('input', function () {
-                state.extra[index] = input.value;
+                condition.value = input.value;
                 syncSaveButton();
                 showSearching();
                 scheduleRender();
             });
 
-            var remove = iconButton('Remove this AND condition', 'M6 6l12 12M18 6 6 18');
+            var remove = iconButton('Remove this condition', 'M6 6l12 12M18 6 6 18');
             remove.className = 'condition__remove';
             remove.addEventListener('click', function () {
                 state.extra.splice(index, 1);
@@ -759,32 +834,30 @@
                 // la barre, pour ne pas y placer le curseur ni ouvrir
                 // l'historique.
                 elements.and.focus();
-                if (state.categories.length > 0) {
-                    resetViews();
-                    render();
-                }
+                applyConditions();
             });
 
+            row.appendChild(operator);
             row.appendChild(input);
             row.appendChild(remove);
             elements.conditions.appendChild(row);
             if (index === focusIndex) {
-                focusTarget = input;
+                focusTarget = focusPart === 'operator' ? operator : input;
             }
         });
 
-        syncAndButton();
+        syncConditionButtons();
         if (focusTarget !== null) {
             focusTarget.focus();
         }
     }
 
-    function addCondition() {
+    function addCondition(op) {
         if (state.extra.length >= MAX_CONDITIONS) {
             return;
         }
-        state.extra.push('');
-        renderConditions(state.extra.length - 1);
+        state.extra.push({ op: op, value: '' });
+        renderConditions(state.extra.length - 1, 'input');
     }
 
     function setConditions(values) {
@@ -800,7 +873,14 @@
         var category = params.get('category');
         elements.search.value = query;
         state.query = query.toLowerCase();
-        setConditions(params.getAll('and'));
+        // Les paramètres « and » et « or » sont lus dans l'ordre de l'adresse.
+        var conditions = [];
+        params.forEach(function (value, key) {
+            if (key === 'and' || key === 'or') {
+                conditions.push({ op: key, value: value });
+            }
+        });
+        setConditions(conditions);
         state.activeCategory = state.categories.some(function (item) {
             return item.name === category;
         }) ? category : null;
@@ -812,8 +892,8 @@
         if (query) {
             params.set('q', query);
         }
-        extraValues().forEach(function (value) {
-            params.append('and', value);
+        activeConditions().forEach(function (condition) {
+            params.append(condition.op, condition.value);
         });
         if (state.activeCategory !== null) {
             params.set('category', state.activeCategory);
@@ -899,7 +979,10 @@
             // Champ omis sans condition : le cookie reste court et les
             // sauvegardes antérieures gardent leur format.
             if (entry.extra.length > 0) {
-                stored.a = entry.extra;
+                // AND : simple texte ; OR : ["or", texte].
+                stored.a = entry.extra.map(function (condition) {
+                    return condition.op === 'or' ? ['or', condition.value] : condition.value;
+                });
             }
             return stored;
         }));
@@ -910,17 +993,17 @@
         return {
             query: elements.search.value.trim(),
             category: state.activeCategory,
-            extra: extraValues()
+            extra: activeConditions()
         };
     }
 
     function findSaved(search) {
         var wanted = search.query.toLowerCase();
-        var wantedExtra = search.extra.join('\n').toLowerCase();
+        var wantedExtra = conditionsKey(search.extra);
         var found = -1;
         state.saved.forEach(function (entry, index) {
             if (found === -1 && entry.query.toLowerCase() === wanted && entry.category === search.category
-                && entry.extra.join('\n').toLowerCase() === wantedExtra) {
+                && conditionsKey(entry.extra) === wantedExtra) {
                 found = index;
             }
         });
@@ -929,11 +1012,9 @@
 
     function describeSearch(entry) {
         var parts = [];
-        var terms = (entry.query ? [entry.query] : []).concat(entry.extra);
-        if (terms.length > 0) {
-            parts.push(terms.map(function (term) {
-                return '"' + term + '"';
-            }).join(' AND '));
+        var expression = formatExpression(entry.query, entry.extra, '"');
+        if (expression) {
+            parts.push(expression);
         }
         parts.push(entry.category === null ? 'All categories' : categoryLabel(entry.category));
         return parts.join(' · ');
@@ -1129,8 +1210,8 @@
             if (state.saved.length >= SAVED_MAX_ENTRIES) {
                 showSavedError('You can keep up to ' + SAVED_MAX_ENTRIES + ' saved searches. Delete one to save a new one.');
             } else {
-                var terms = (search.query ? [search.query] : []).concat(search.extra);
-                var name = (terms.join(' AND ') || categoryLabel(search.category)).slice(0, SAVED_NAME_MAX_LENGTH);
+                var name = (formatExpression(search.query, search.extra, '') || categoryLabel(search.category))
+                    .slice(0, SAVED_NAME_MAX_LENGTH);
                 var entries = state.saved.concat([{
                     name: name, query: search.query, category: search.category, extra: search.extra
                 }]);
@@ -2285,8 +2366,13 @@
             render();
         });
 
-        elements.and.addEventListener('click', addCondition);
-        syncAndButton();
+        elements.and.addEventListener('click', function () {
+            addCondition('and');
+        });
+        elements.or.addEventListener('click', function () {
+            addCondition('or');
+        });
+        syncConditionButtons();
 
         elements.category.addEventListener('change', function () {
             state.activeCategory = elements.category.value || null;

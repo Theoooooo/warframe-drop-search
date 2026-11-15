@@ -2,8 +2,6 @@
 
 https://theoooooo.github.io/warframe-drop-search/
 
-![readme_gif](readme_gif.gif)
-
 I created this website to be able to search through the drop tables exposed on the [official Warframe drop table page](https://warframe-web-assets.nyc3.cdn.digitaloceanspaces.com/uploads/cms/hnfvc0o3jnfvc873njb03enrf56.html).
 
 I was a bit tired of not being able to quickly find a drop across missions and drop tables, so I made myself a website to search them efficiently.
@@ -17,14 +15,14 @@ This is a fan-made tool, not affiliated with Digital Extremes.
 - Search by loot (reward, mod, blueprint, resource) or by source (mission, enemy, bounty), from 3 characters
 - Category drop-down menu with the number of results per category; picking a category with an empty search bar lets you browse it entirely
 - Click any source or loot name in the results to search for it and list where it comes from
-- AND conditions: the "AND" button of the search bar adds up to 5 extra terms that narrow the results, for example `Höllvania/Solstice Square (Defense)` AND `Relic` lists every relic this mission can reward
+- AND and OR conditions, up to 5 per search, added with the "AND" and "OR" buttons of the search bar. AND narrows the results: `Höllvania/Solstice Square (Defense)` AND `Relic` lists every relic this mission can reward. OR adds an alternative to the previous term and binds tighter than AND: `A` AND `B` OR `C` means `A` AND (`B` OR `C`). Click the label of a condition to switch it between AND and OR
 - Clear button inside the search bar
 - Search history: click the search bar to get your 10 last searches, kept in a dedicated cookie (`wds_search_history`) and erasable from the same panel
-- The address bar follows the current search (`?q=...&and=...&category=...`), so a search can be shared or bookmarked
+- The address bar follows the current search (`?q=...&and=...&or=...&category=...`), so a search can be shared or bookmarked
 
 ### Saved searches
 
-- Save the current search (text, AND conditions and category) with the bookmark button of the search bar
+- Save the current search (text, AND and OR conditions, category) with the bookmark button of the search bar
 - Open, filter, rename and delete saved searches from the "Saved" button in the header
 - Saved searches are kept in a dedicated cookie of your browser (`wds_saved_searches`) for 400 days, up to 20 searches. Nothing is sent to a third party
 

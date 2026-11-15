@@ -6,6 +6,11 @@
 // si les deux divergent.
 window.APP_VERSIONS = [
     {
+        version: '0.4.0',
+        date: '2026-11-15',
+        summary: 'OR conditions next to AND: an OR is an alternative to the previous term, and the label of a condition switches between the two.'
+    },
+    {
         version: '0.3.0',
         date: '2026-11-15',
         summary: 'AND conditions to refine a search, loot and relic tracker with quantities, history of the days when the drop tables changed with a calendar, settings window, and rotations for Dynamic Location Rewards.'
