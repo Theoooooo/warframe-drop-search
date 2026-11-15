@@ -1,20 +1,206 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warframe Drop Table Search</title>
+    <meta name="description" content="Search the official Warframe drop tables by loot or by source: missions, relics, bounties, mods, blueprints, resources and more.">
+    <meta name="color-scheme" content="dark light">
+    <title>Warframe Drop Search</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script src="theme.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="update-time"></div>
-    <h1>Warframe Drop Table Search</h1>
-    <div id="search-container">
-        <input type="text" id="searchBar" placeholder="Enter Loot or Source (Mission/Mod) Name">
-        <div id="category-buttons"></div> <!-- Conteneur pour les boutons de catégorie -->
-    </div>
-    <div id="loader" class="loader"></div>
-    <div id="results"></div>
+    <a class="skip-link" href="#searchBar">Skip to search</a>
+
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <div class="site-header__lead">
+                <a class="brand" href="./" aria-label="Warframe Drop Search, home">
+                    <svg class="brand__mark" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 2 4 7v10l8 5 8-5V7z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="m12 7-4 5 4 5 4-5z" fill="currentColor"/>
+                    </svg>
+                    <span class="brand__name">Warframe Drop Search</span>
+                </a>
+                <button id="saved-button" class="header-tab" type="button" aria-haspopup="dialog" title="Saved searches">
+                    <svg class="icon icon--bookmark" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg>
+                    <span class="saved-button__label">Saved</span>
+                    <span id="saved-count" class="count-pill">0</span>
+                </button>
+                <button id="tracker-button" class="header-tab header-tab--joined" type="button" aria-haspopup="dialog" title="Tracked items">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+                    <span class="saved-button__label">Tracker</span>
+                    <span id="tracker-count" class="count-pill">0</span>
+                </button>
+            </div>
+            <div class="site-header__meta">
+                <button id="changes-button" class="button button--outline button--badge" type="button" aria-haspopup="dialog" title="Show the days when the drop tables changed" hidden>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7v5l3 2"/><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1M3.5 4v4h4"/></svg>
+                    <span>Changes</span>
+                    <span id="changes-count" class="count-pill">0</span>
+                </button>
+                <span id="update-time" class="badge badge--outline" hidden></span>
+                <button id="version-button" class="button button--outline button--sm button--badge" type="button" aria-haspopup="dialog" title="Show version history">v–</button>
+                <button id="settings-button" class="button button--ghost button--icon" type="button" aria-haspopup="dialog" aria-label="Settings" title="Settings">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h9M17 6h3M4 12h3M11 12h9M4 18h11M19 18h1"/><circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+                </button>
+                <button id="theme-toggle" class="button button--ghost button--icon" type="button" aria-label="Switch color theme" title="Switch color theme">
+                    <svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+                    <svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Find where it drops</h1>
+            <p class="hero__lead">Search every official Warframe drop table by loot or by source: missions, relics, bounties, enemies and more.</p>
+        </section>
+
+        <section class="card search-card" aria-label="Search and filters">
+            <div class="search-grid">
+                <div class="search-grid__main">
+                    <label class="field-label" for="searchBar">Loot or source name</label>
+                    <div id="search-field" class="search-field">
+                        <svg class="icon search-field__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+                        <input type="search" id="searchBar" class="input" placeholder="Enter Loot or Source (Mission/Mod) Name" autocomplete="off" spellcheck="false" aria-describedby="search-hint" aria-controls="search-history" aria-expanded="false">
+                        <kbd class="search-field__kbd" aria-hidden="true">/</kbd>
+                        <button id="search-and" class="search-field__and" type="button" title="Add an AND condition to refine the results">AND</button>
+                        <button id="search-clear" class="search-field__clear" type="button" aria-label="Clear search" title="Clear search" hidden>
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+                        </button>
+                        <button id="search-save" class="search-field__save" type="button" aria-label="Save this search" title="Save this search" disabled>
+                            <svg class="icon icon--bookmark" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg>
+                        </button>
+                        <div id="search-history" class="history" hidden>
+                            <p class="history__title">Recent searches</p>
+                            <ul id="search-history-list" class="history__list"></ul>
+                            <button id="search-history-clear" class="history__row history__clear" type="button">Clear history</button>
+                        </div>
+                    </div>
+                    <div id="search-conditions" class="conditions" hidden></div>
+                </div>
+                <div class="search-grid__side">
+                    <label class="field-label" for="category-select">Category</label>
+                    <div class="select-field">
+                        <select id="category-select" class="select" disabled>
+                            <option value="">All categories</option>
+                        </select>
+                        <svg class="icon select-field__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                    </div>
+                </div>
+            </div>
+            <p id="search-hint" class="field-hint">Type at least 3 characters, or pick a category to browse it entirely. Click any source or loot name in the results to search for it. Use AND to refine the results with up to 5 more terms.</p>
+        </section>
+
+        <div id="loader" class="loader" role="status" hidden>
+            <span class="loader__spinner" aria-hidden="true"></span>
+            <span class="loader__label">Searching…</span>
+        </div>
+        <p id="summary" class="summary" role="status" aria-live="polite"></p>
+        <div id="results" class="results"></div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p>Data from the <a href="https://warframe-web-assets.nyc3.cdn.digitaloceanspaces.com/uploads/cms/hnfvc0o3jnfvc873njb03enrf56.html" rel="noopener noreferrer" target="_blank">official Warframe drop tables</a>, refreshed daily.</p>
+            <p>Fan-made tool, not affiliated with Digital Extremes. <a href="https://github.com/Theoooooo/warframe-drop-search" rel="noopener noreferrer" target="_blank">Source code</a></p>
+        </div>
+    </footer>
+
+    <dialog id="version-dialog" class="dialog" aria-labelledby="version-dialog-title">
+        <div class="dialog__header">
+            <h2 id="version-dialog-title">Version history</h2>
+            <button id="version-close" class="button button--ghost button--icon" type="button" aria-label="Close">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+            </button>
+        </div>
+        <ol id="version-list" class="version-list"></ol>
+    </dialog>
+
+    <dialog id="changes-dialog" class="dialog dialog--full" aria-labelledby="changes-dialog-title">
+        <div class="dialog__header">
+            <div class="dialog__title-group">
+                <h2 id="changes-dialog-title">Data changes</h2>
+                <button id="changes-date" class="button button--outline button--badge" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="changes-calendar" title="Choose a date" hidden>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>
+                    <span id="changes-date-label"></span>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+            </div>
+            <button id="changes-close" class="button button--ghost button--icon" type="button" aria-label="Close">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+            </button>
+        </div>
+        <div id="changes-calendar" class="calendar" role="group" aria-label="Dates with changes" hidden></div>
+        <p id="changes-empty" class="dialog__empty">No change recorded yet. The official drop tables are checked every day; a day is listed here only when something changed.</p>
+        <div id="changes-list" class="changes"></div>
+        <p class="dialog__note">Only the days when the official drop tables changed can be selected in the calendar. A modified row appears twice: once removed, once added.</p>
+    </dialog>
+
+    <dialog id="settings-dialog" class="dialog" aria-labelledby="settings-dialog-title">
+        <div class="dialog__header">
+            <h2 id="settings-dialog-title">Settings</h2>
+            <button id="settings-close" class="button button--ghost button--icon" type="button" aria-label="Close">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+            </button>
+        </div>
+        <p id="settings-error" class="dialog__error" role="alert" hidden></p>
+        <div class="setting">
+            <div class="setting__text">
+                <p id="setting-auto-remove-label" class="setting__label">Remove tracked items at 0</p>
+                <p id="setting-auto-remove-hint" class="setting__hint">On: an item leaves the tracker as soon as its quantity reaches 0. Off: it stays, marked as done, until you delete it from the Tracker window.</p>
+            </div>
+            <button id="setting-auto-remove" class="switch" type="button" role="switch" aria-checked="false" aria-labelledby="setting-auto-remove-label" aria-describedby="setting-auto-remove-hint">
+                <span class="switch__state" aria-hidden="true">Off</span>
+                <span class="switch__track" aria-hidden="true"><span class="switch__thumb"></span></span>
+            </button>
+        </div>
+        <p class="dialog__note">Settings are kept in a cookie of this browser for 400 days.</p>
+    </dialog>
+
+    <dialog id="saved-dialog" class="dialog dialog--wide" aria-labelledby="saved-dialog-title">
+        <div class="dialog__header">
+            <h2 id="saved-dialog-title">Saved searches</h2>
+            <button id="saved-close" class="button button--ghost button--icon" type="button" aria-label="Close">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+            </button>
+        </div>
+        <div id="saved-filter-field" class="dialog__filter">
+            <svg class="icon dialog__filter-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input type="search" id="saved-filter" class="dialog__filter-input" placeholder="Filter saved searches" aria-label="Filter saved searches" autocomplete="off" spellcheck="false">
+        </div>
+        <p id="saved-error" class="dialog__error" role="alert" hidden></p>
+        <p id="saved-no-match" class="dialog__empty" role="status" hidden>No saved search matches this filter.</p>
+        <p id="saved-empty" class="dialog__empty">No saved search yet. Run a search, then use the bookmark button in the search bar.</p>
+        <ul id="saved-list" class="saved-list"></ul>
+        <p class="dialog__note">Saved searches are kept in a cookie of this browser for 400 days.</p>
+    </dialog>
+
+    <dialog id="tracker-dialog" class="dialog dialog--wide" aria-labelledby="tracker-dialog-title">
+        <div class="dialog__header">
+            <h2 id="tracker-dialog-title">Tracked items</h2>
+            <button id="tracker-close" class="button button--ghost button--icon" type="button" aria-label="Close">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+            </button>
+        </div>
+        <div id="tracker-filter-field" class="dialog__filter">
+            <svg class="icon dialog__filter-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input type="search" id="tracker-filter" class="dialog__filter-input" placeholder="Filter tracked items" aria-label="Filter tracked items" autocomplete="off" spellcheck="false">
+        </div>
+        <p id="tracker-error" class="dialog__error" role="alert" hidden></p>
+        <p id="tracker-no-match" class="dialog__empty" role="status" hidden>No tracked item matches this filter.</p>
+        <p id="tracker-empty" class="dialog__empty">Nothing tracked yet. Use the target button next to a loot in the results to track it.</p>
+        <ul id="tracker-list" class="saved-list"></ul>
+        <div id="tracker-actions" class="dialog__actions" hidden>
+            <button id="tracker-delete-all" class="button button--outline button--danger" type="button">Delete all</button>
+        </div>
+        <p class="dialog__note">Tracked items are kept in a cookie of this browser for 400 days. <span id="tracker-zero-note"></span></p>
+    </dialog>
+
+    <script src="version.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
