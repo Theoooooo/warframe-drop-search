@@ -67,7 +67,8 @@
                         <svg class="icon search-field__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
                         <input type="search" id="searchBar" class="input" placeholder="Enter Loot or Source (Mission/Mod) Name" autocomplete="off" spellcheck="false" aria-describedby="search-hint" aria-controls="search-history" aria-expanded="false">
                         <kbd class="search-field__kbd" aria-hidden="true">/</kbd>
-                        <button id="search-and" class="search-field__and" type="button" title="Add an AND condition to refine the results">AND</button>
+                        <button id="search-and" class="search-field__op search-field__op--and" type="button">AND</button>
+                        <button id="search-or" class="search-field__op search-field__op--or" type="button">OR</button>
                         <button id="search-clear" class="search-field__clear" type="button" aria-label="Clear search" title="Clear search" hidden>
                             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
                         </button>
@@ -92,7 +93,7 @@
                     </div>
                 </div>
             </div>
-            <p id="search-hint" class="field-hint">Type at least 3 characters, or pick a category to browse it entirely. Click any source or loot name in the results to search for it. Use AND to refine the results with up to 5 more terms.</p>
+            <p id="search-hint" class="field-hint">Type at least 3 characters, or pick a category to browse it entirely. Click any source or loot name in the results to search for it. Use AND to narrow the results and OR to add an alternative to the previous term, up to 5 conditions.</p>
         </section>
 
         <div id="loader" class="loader" role="status" hidden>

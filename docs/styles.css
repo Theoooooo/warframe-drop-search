@@ -369,7 +369,7 @@ a {
 
 .search-field__kbd {
     position: absolute;
-    right: 8.875rem;
+    right: 11.25rem;
     display: none;
     padding: 0.125rem 0.5rem;
     border: 1px solid var(--border);
@@ -384,7 +384,7 @@ a {
 .input {
     width: 100%;
     height: 3rem;
-    padding: 0 8.625rem 0 2.75rem;
+    padding: 0 11rem 0 2.75rem;
     border: 1px solid var(--input);
     border-radius: var(--radius);
     background: var(--background);
@@ -415,8 +415,8 @@ a {
     right: 2.875rem;
 }
 
-/* Bouton « AND » : à gauche de la croix, ajoute une condition. */
-.search-field__and {
+/* Boutons « AND » et « OR » : à gauche de la croix, ajoutent une condition. */
+.search-field__op {
     position: absolute;
     right: 5.5rem;
     height: 1.75rem;
@@ -433,18 +433,22 @@ a {
     transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
 }
 
-.search-field__and:hover:not(:disabled) {
+.search-field__op--and {
+    right: 7.875rem;
+}
+
+.search-field__op:hover:not(:disabled) {
     border-color: var(--primary);
     background: color-mix(in srgb, var(--primary) 12%, transparent);
     color: var(--primary);
 }
 
-.search-field__and:focus-visible {
+.search-field__op:focus-visible {
     outline: 2px solid var(--ring);
     outline-offset: 1px;
 }
 
-.search-field__and:disabled {
+.search-field__op:disabled {
     opacity: 0.4;
     cursor: not-allowed;
 }
@@ -478,7 +482,32 @@ a {
     font-size: 0.6875rem;
     font-weight: 700;
     letter-spacing: 0.04em;
-    pointer-events: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.condition__label:hover {
+    background: color-mix(in srgb, var(--primary) 28%, transparent);
+}
+
+.condition__label:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 1px;
+}
+
+/* Condition « OR » : étiquette bleue et retrait, pour montrer qu'elle se
+   rattache au terme précédent. */
+.condition--or {
+    margin-left: 1.5rem;
+}
+
+.condition--or .condition__label {
+    background: color-mix(in srgb, var(--info) 16%, transparent);
+    color: var(--info);
+}
+
+.condition--or .condition__label:hover {
+    background: color-mix(in srgb, var(--info) 30%, transparent);
 }
 
 .input.condition__input {
